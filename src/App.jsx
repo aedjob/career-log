@@ -385,9 +385,38 @@ export default function CareerLog() {
         <p style={{ margin: "0 0 4px", fontSize: 15, color: "#C4C1B8", maxWidth: 560 }}>
           Industrial Engineer (UTN) · M.Sc. Statistics &amp; Operations Research (RMIT)
         </p>
-        <p className="mono" style={{ margin: 0, fontSize: 12, color: "#8A8779" }}>
+        <p className="mono" style={{ margin: "0 0 16px", fontSize: 12, color: "#8A8779" }}>
           Supply Chain &amp; Operations
         </p>
+        <div style={{ display: "flex", flexWrap: "wrap", gap: 16, alignItems: "center" }}>
+          <span
+            className="mono"
+            style={{
+              fontSize: 10,
+              letterSpacing: "0.1em",
+              textTransform: "uppercase",
+              color: "#55534E",
+            }}
+          >
+            Let's Connect
+          </span>
+          <a
+            href="mailto:aedjob@gmail.com"
+            className="mono"
+            style={{ fontSize: 12, color: "#2aeccf", textDecoration: "none" }}
+          >
+            aedjob@gmail.com
+          </a>
+          <a
+            href="https://www.linkedin.com/in/aedjob/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mono"
+            style={{ fontSize: 12, color: "#2aeccf", textDecoration: "none" }}
+          >
+            LinkedIn ↗
+          </a>
+        </div>
       </header>
 
       <main style={{ maxWidth: 880, margin: "0 auto", padding: "40px 24px 80px" }}>
