@@ -247,5 +247,21 @@
     "tags": ["energy management", "data analytics", "sustainability", "compliance"],
     "credential_url": null,
     "link": "https://www.youtube.com/watch?v=BQ34cxp4Sbc"
+  },
+  {
+    "id": "2025-ea-negotiation-skills-early-career-cpd",
+    "date": "2025-02-19",
+    "end_date": null,
+    "type": "cpd",
+    "category": "webinar",
+    "title": "Early Career CPD: Strengthening Negotiation Skills to Create Win-Win Solutions",
+    "org": "Engineers Australia",
+    "location": "Online (EA On-Demand)",
+    "speakers": "Jahan Kay (Learning Designer, Engineering Education Australia)",
+    "duration_hours": 1,
+    "description": "Session on negotiation as a tool for early-career engineers — defining negotiation, understanding power dynamics, different communication styles, and building win-win outcomes through shared interests.",
+    "tags": ["negotiation", "communication", "early career", "soft skills"],
+    "credential_url": null,
+    "link": "https://portal.engineersaustralia.org.au/event/2024/09/early-career-cpd%3A-strengthening-negotiation-skills-to-create-win-win-solutions-55286"
   }
 ]
