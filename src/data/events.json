@@ -343,5 +343,21 @@
     "tags": ["offshore wind", "renewable energy", "grid connection", "Australia"],
     "credential_url": null,
     "link": "https://eaondemand.engineersaustralia.org.au/Play?pId=0a40c1e7-181b-48ee-9a18-bea7a76fb1af"
+  },
+  {
+    "id": "2024-ea-3d-bioprinting-regenerative-medicine",
+    "date": "2024-07-12",
+    "end_date": null,
+    "type": "cpd",
+    "category": "webinar",
+    "title": "3D Bioprinting for Regenerative Medicine",
+    "org": "Engineers Australia",
+    "location": "Online (EA On-Demand)",
+    "speakers": "Deanna Hood (Senior Robotics Engineer, Inventia Life Science; Young Professional Engineer of the Year)",
+    "duration_hours": 0.25,
+    "description": "Presentation on applying electrical/software engineering to life sciences — Deanna Hood's work on Inventia's Ligō skin-printing robot, IEC 60601-1 compliance strategies for medical robotics, and her broader career journey across bioprinting, burns treatment, and assistive robotics.",
+    "tags": ["bioprinting", "medical robotics", "life sciences", "career"],
+    "credential_url": null,
+    "link": "https://portal.engineersaustralia.org.au/event/2022/09/3d-bioprinting-regenerative-medicine-45426"
   }
 ]
