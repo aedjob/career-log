@@ -187,6 +187,57 @@ function Entry({ e, collapsible }) {
   );
 }
 
+function ConnectButton() {
+  const [open, setOpen] = useState(false);
+  return (
+    <div>
+      <button
+        onClick={() => setOpen((v) => !v)}
+        className="mono"
+        style={{
+          display: "flex",
+          alignItems: "center",
+          gap: 10,
+          background: "none",
+          border: "none",
+          padding: 0,
+          cursor: "pointer",
+          fontSize: 12,
+          letterSpacing: "0.06em",
+          textTransform: "uppercase",
+          color: "#2aeccf",
+          marginBottom: open ? 10 : 0,
+        }}
+      >
+        <span style={{ fontSize: 12, width: 10, display: "inline-block" }}>
+          {open ? "−" : "+"}
+        </span>
+        Let's Connect
+      </button>
+      {open && (
+        <div style={{ display: "flex", flexWrap: "wrap", gap: 16, paddingLeft: 20 }}>
+          <a
+            href="mailto:aedjob@gmail.com"
+            className="mono"
+            style={{ fontSize: 12, color: "#C4C1B8", textDecoration: "none" }}
+          >
+            aedjob@gmail.com
+          </a>
+          <a
+            href="https://www.linkedin.com/in/aedjob/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mono"
+            style={{ fontSize: 12, color: "#C4C1B8", textDecoration: "none" }}
+          >
+            LinkedIn ↗
+          </a>
+        </div>
+      )}
+    </div>
+  );
+}
+
 function Section({ title, entries, collapsibleEntries, filters, yearFilter }) {
   const [open, setOpen] = useState(false);
   const [activeFilter, setActiveFilter] = useState(null);
@@ -388,35 +439,7 @@ export default function CareerLog() {
         <p className="mono" style={{ margin: "0 0 16px", fontSize: 12, color: "#8A8779" }}>
           Supply Chain &amp; Operations
         </p>
-        <div style={{ display: "flex", flexWrap: "wrap", gap: 16, alignItems: "center" }}>
-          <span
-            className="mono"
-            style={{
-              fontSize: 10,
-              letterSpacing: "0.1em",
-              textTransform: "uppercase",
-              color: "#55534E",
-            }}
-          >
-            Let's Connect
-          </span>
-          <a
-            href="mailto:aedjob@gmail.com"
-            className="mono"
-            style={{ fontSize: 12, color: "#2aeccf", textDecoration: "none" }}
-          >
-            aedjob@gmail.com
-          </a>
-          <a
-            href="https://www.linkedin.com/in/aedjob/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mono"
-            style={{ fontSize: 12, color: "#2aeccf", textDecoration: "none" }}
-          >
-            LinkedIn ↗
-          </a>
-        </div>
+        <ConnectButton />
       </header>
 
       <main style={{ maxWidth: 880, margin: "0 auto", padding: "40px 24px 80px" }}>
