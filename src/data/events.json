@@ -183,5 +183,21 @@
     "tags": ["robotics", "industry", "innovation", "energy"],
     "credential_url": null,
     "link": "https://www.eventbrite.com.ar/e/implementacion-de-la-robotica-en-industrias-tickets-1993926022408"
+  },
+  {
+    "id": "2026-ascla-last-mile-webinar",
+    "date": "2026-08-13",
+    "end_date": null,
+    "type": "cpd",
+    "category": "webinar",
+    "title": "Winning the Last Mile as a Competitive Advantage",
+    "org": "ASCLA (Australian Supply Chain & Logistics Association)",
+    "location": "Online",
+    "speakers": "Varun Chadha (Associate VP ANZ, FarEye); Steven Ballerini (CEO, ASCLA); Andrew McKenna (Managing Director, McKenna Worldwide / Quantium Solutions Australia)",
+    "duration_hours": 1,
+    "description": "Executive discussion on how AI, agility and customer-centric strategies are shaping last-mile delivery performance and competitive advantage.",
+    "tags": ["supply chain", "logistics", "last mile", "AI"],
+    "credential_url": null,
+    "link": "https://info.sclaa.com.au/event-6761711"
   }
 ]
