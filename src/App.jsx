@@ -110,6 +110,41 @@ function Entry({ e, collapsible }) {
   );
 }
 
+function Section({ title, entries, collapsibleEntries }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <div style={{ marginBottom: 32 }}>
+      <button
+        onClick={() => setOpen((v) => !v)}
+        className="mono"
+        style={{
+          display: "flex",
+          alignItems: "center",
+          gap: 10,
+          background: "none",
+          border: "none",
+          padding: 0,
+          cursor: "pointer",
+          fontSize: 13,
+          letterSpacing: "0.1em",
+          textTransform: "uppercase",
+          color: "#F5F4F0",
+          marginBottom: open ? 16 : 0,
+        }}
+      >
+        <span style={{ color: "#2aeccf", fontSize: 12, width: 10, display: "inline-block" }}>
+          {open ? "−" : "+"}
+        </span>
+        {title}
+        <span className="mono" style={{ color: "#55534E", fontSize: 11 }}>
+          ({entries.length})
+        </span>
+      </button>
+      {open && <Timeline entries={entries} collapsible={collapsibleEntries} />}
+    </div>
+  );
+}
+
 function Timeline({ entries, collapsible }) {
   return (
     <div style={{ position: "relative", paddingLeft: 24 }}>
@@ -168,14 +203,6 @@ export default function CareerLog() {
         * { box-sizing: border-box; }
         .mono { font-family: 'IBM Plex Mono', monospace; }
         .entry:hover { background: #2E2D2A; }
-        .section-heading {
-          font-family: 'IBM Plex Mono', monospace;
-          font-size: 13px;
-          letter-spacing: 0.1em;
-          text-transform: uppercase;
-          color: #F5F4F0;
-          margin: 0 0 16px;
-        }
       `}</style>
 
       {/* Title block */}
@@ -221,25 +248,10 @@ export default function CareerLog() {
       </header>
 
       <main style={{ maxWidth: 880, margin: "0 auto", padding: "40px 24px 80px" }}>
-        <section id="work-projects" style={{ marginBottom: 56 }}>
-          <h2 className="section-heading">Projects</h2>
-          <Timeline entries={projects} />
-
-          <h2 className="section-heading" style={{ marginTop: 40 }}>
-            Work
-          </h2>
-          <Timeline entries={work} collapsible />
-        </section>
-
-        <section id="education-cpd">
-          <h2 className="section-heading">Education</h2>
-          <Timeline entries={education} />
-
-          <h2 className="section-heading" style={{ marginTop: 40 }}>
-            CPD
-          </h2>
-          <Timeline entries={cpd} />
-        </section>
+        <Section title="Projects" entries={projects} />
+        <Section title="Work" entries={work} collapsibleEntries />
+        <Section title="Education" entries={education} />
+        <Section title="CPD" entries={cpd} />
       </main>
 
       <footer
