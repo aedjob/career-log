@@ -137,19 +137,19 @@
     "tags": []
   },
   {
-    "id": "2026-generic-cpd-placeholder",
-    "date": "2026-01-01",
-    "end_date": null,
+    "id": "2026-expo-logistik",
+    "date": "2026-08-11",
+    "end_date": "2026-08-13",
     "type": "cpd",
-    "category": "self-study",
-    "title": "Example CPD entry — replace me",
-    "org": null,
-    "location": null,
+    "category": "conference",
+    "title": "Expo Logisti-K 2026 (16th ed.)",
+    "org": "Expo Logisti-K",
+    "location": "La Rural, Buenos Aires AR",
     "speakers": null,
-    "duration_hours": null,
-    "description": "Placeholder for continuing professional development items: certifications, workshops, self-study, webinars.",
-    "tags": ["example"],
+    "duration_hours": 6,
+    "description": "Held conversations with several suppliers in the logistics and supply chain industry to understand the latest technology and solutions on the market.",
+    "tags": ["logistics", "supply chain", "trade show"],
     "credential_url": null,
-    "link": null
+    "link": "https://www.expologisti-k.com.ar/"
   }
 ]
