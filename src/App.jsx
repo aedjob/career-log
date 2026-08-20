@@ -247,7 +247,7 @@ function Section({ title, entries, collapsibleEntries, filters, yearFilter }) {
         <>
           {filters && (
             <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginBottom: 16 }}>
-              {Object.keys(filters).map((label) => (
+              {Object.keys(filters).sort((a, b) => a.localeCompare(b)).map((label) => (
                 <button
                   key={label}
                   onClick={() => toggleFilter(label)}
