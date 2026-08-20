@@ -359,5 +359,21 @@
     "tags": ["bioprinting", "medical robotics", "life sciences", "career"],
     "credential_url": null,
     "link": "https://portal.engineersaustralia.org.au/event/2022/09/3d-bioprinting-regenerative-medicine-45426"
+  },
+  {
+    "id": "2023-ea-risk-mitigation-fundamentals",
+    "date": "2023-07-05",
+    "end_date": null,
+    "type": "cpd",
+    "category": "webinar",
+    "title": "Risk Mitigation and Management — Fundamentals of Risk Management",
+    "org": "Engineers Australia",
+    "location": "Online",
+    "speakers": "Jane MacMaster (Chief Engineer, Engineers Australia); Kristy Eulenstein (Head of Policy and Government Relations, Consult Australia); Tom Lunn (Senior Policy Manager, Insurance Council of Australia)",
+    "duration_hours": 1,
+    "description": "Webinar launching EA's Risk Management Guide — how insurers assess engineers' risk, how 'risk' is perceived differently by engineers versus insurers, and practical ways to manage risk through contracts to improve Professional Indemnity Insurance outcomes.",
+    "tags": ["risk management", "insurance", "professional indemnity", "contracts"],
+    "credential_url": null,
+    "link": "https://portal.engineersaustralia.org.au/event/2023/05/risk-mitigation-and-management-fundamentals-risk-management-48681"
   }
 ]
