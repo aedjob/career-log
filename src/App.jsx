@@ -26,6 +26,15 @@ const CPD_FILTERS = {
     "grid connection",
   ],
   "Supply Chain & Logistics": ["logistics", "supply chain", "trade show", "last mile"],
+  "Data & Analytics": [
+    "data analytics",
+    "Power BI",
+    "DAX",
+    "dashboards",
+    "BI",
+    "data visualization",
+    "analytics",
+  ],
 };
 
 function formatYear(d) {
