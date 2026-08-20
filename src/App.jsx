@@ -42,7 +42,10 @@ function formatYear(d) {
 }
 
 function formatRange(start, end) {
-  return end ? `${formatYear(start)} – ${formatYear(end)}` : `${formatYear(start)}`;
+  if (!end) return `${formatYear(start)}`;
+  const startYear = formatYear(start);
+  const endYear = formatYear(end);
+  return startYear === endYear ? `${startYear}` : `${startYear} – ${endYear}`;
 }
 
 function formatMonthYear(d) {
