@@ -101,13 +101,18 @@ function Entry({ e, collapsible }) {
         }}
       >
         {e.title}
-        {(e.org || e.location || e.speakers) && (
+        {(e.org || e.location) && (
           <span style={{ color: "#8A8779", fontWeight: 400, fontStyle: "normal" }}>
             {" "}
-            — {[e.org, e.location, e.speakers].filter(Boolean).join(" · ")}
+            — {[e.org, e.location].filter(Boolean).join(" · ")}
           </span>
         )}
       </h3>
+      {e.speakers && (
+        <p className="mono" style={{ margin: "0 0 4px", fontSize: 11, color: "#8A8779" }}>
+          {e.speakers}
+        </p>
+      )}
       {showBody && e.description && (
         <p style={{ margin: "0 0 8px", fontSize: 14, color: "#C4C1B8" }}>{e.description}</p>
       )}
