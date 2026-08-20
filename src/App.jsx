@@ -217,7 +217,9 @@ function ConnectButton() {
       {open && (
         <div style={{ display: "flex", flexWrap: "wrap", gap: 16, paddingLeft: 20 }}>
           <a
-            href="mailto:aedjob@gmail.com"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=aedjob@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="mono"
             style={{ fontSize: 12, color: "#C4C1B8", textDecoration: "none" }}
           >
