@@ -231,5 +231,21 @@
     "tags": ["networking", "cybersecurity", "SD-WAN", "cloud"],
     "credential_url": null,
     "link": "https://www.youtube.com/watch?v=jM35_Qrt3RI"
+  },
+  {
+    "id": "2025-ea-data-insight-energy-management-webinar",
+    "date": "2025-02-20",
+    "end_date": null,
+    "type": "cpd",
+    "category": "webinar",
+    "title": "Thought Leaders Series: Data Insight — A Key Strategy for Energy Management",
+    "org": "Engineers Australia",
+    "location": "Online",
+    "speakers": null,
+    "duration_hours": 1.5,
+    "description": "Webinar on data-driven energy management — EMS architecture (metering, communication, software), Australian regulatory standards (NCC, NABERS, Green Star), a seven-pillar framework for energy data strategy, and typical ROI/payback for energy management investment (10–30% savings, 1–3 year payback).",
+    "tags": ["energy management", "data analytics", "sustainability", "compliance"],
+    "credential_url": null,
+    "link": "https://www.youtube.com/watch?v=BQ34cxp4Sbc"
   }
 ]
