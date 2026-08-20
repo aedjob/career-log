@@ -175,22 +175,43 @@ function Entry({ e, collapsible }) {
   );
 }
 
-function Section({ title, entries, collapsibleEntries, filters }) {
+function Section({ title, entries, collapsibleEntries, filters, yearFilter }) {
   const [open, setOpen] = useState(false);
   const [activeFilters, setActiveFilters] = useState(new Set());
+  const [activeYears, setActiveYears] = useState(new Set());
+
+  const availableYears = useMemo(() => {
+    if (!yearFilter) return [];
+    const years = new Set(entries.map((e) => formatYear(e.date)));
+    return [...years].sort((a, b) => b - a);
+  }, [entries, yearFilter]);
 
   const filteredEntries = useMemo(() => {
-    if (!filters || activeFilters.size === 0) return entries;
-    const activeTagSets = [...activeFilters].map((label) => filters[label]);
-    return entries.filter(
-      (e) => e.tags && activeTagSets.some((tagSet) => e.tags.some((t) => tagSet.includes(t)))
-    );
-  }, [entries, activeFilters, filters]);
+    let result = entries;
+    if (filters && activeFilters.size > 0) {
+      const activeTagSets = [...activeFilters].map((label) => filters[label]);
+      result = result.filter(
+        (e) => e.tags && activeTagSets.some((tagSet) => e.tags.some((t) => tagSet.includes(t)))
+      );
+    }
+    if (yearFilter && activeYears.size > 0) {
+      result = result.filter((e) => activeYears.has(formatYear(e.date)));
+    }
+    return result;
+  }, [entries, activeFilters, filters, activeYears, yearFilter]);
 
   function toggleFilter(label) {
     setActiveFilters((prev) => {
       const next = new Set(prev);
       next.has(label) ? next.delete(label) : next.add(label);
+      return next;
+    });
+  }
+
+  function toggleYear(year) {
+    setActiveYears((prev) => {
+      const next = new Set(prev);
+      next.has(year) ? next.delete(year) : next.add(year);
       return next;
     });
   }
@@ -244,6 +265,29 @@ function Section({ title, entries, collapsibleEntries, filters }) {
                   }}
                 >
                   {label}
+                </button>
+              ))}
+            </div>
+          )}
+          {yearFilter && availableYears.length > 1 && (
+            <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginBottom: 16 }}>
+              {availableYears.map((year) => (
+                <button
+                  key={year}
+                  onClick={() => toggleYear(year)}
+                  className="mono"
+                  style={{
+                    fontSize: 11,
+                    letterSpacing: "0.04em",
+                    padding: "5px 10px",
+                    border: "1px solid",
+                    borderColor: activeYears.has(year) ? "#2aeccf" : "#45433E",
+                    background: activeYears.has(year) ? "#2aeccf" : "transparent",
+                    color: activeYears.has(year) ? "#262624" : "#C4C1B8",
+                    cursor: "pointer",
+                  }}
+                >
+                  {year}
                 </button>
               ))}
             </div>
@@ -348,7 +392,7 @@ export default function CareerLog() {
         <Section title="Projects" entries={projects} />
         <Section title="Work" entries={work} />
         <Section title="Education" entries={education} />
-        <Section title="CPD" entries={cpd} filters={CPD_FILTERS} />
+        <Section title="CPD" entries={cpd} filters={CPD_FILTERS} yearFilter />
       </main>
 
       <footer
