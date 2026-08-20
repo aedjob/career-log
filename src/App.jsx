@@ -221,7 +221,7 @@ function ConnectButton() {
             className="mono"
             style={{ fontSize: 12, color: "#C4C1B8", textDecoration: "none" }}
           >
-            aedjob@gmail.com
+            Mail
           </a>
           <a
             href="https://www.linkedin.com/in/aedjob/"
