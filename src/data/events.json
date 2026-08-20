@@ -279,5 +279,21 @@
     "tags": ["networking", "mentorship", "early career"],
     "credential_url": null,
     "link": null
+  },
+  {
+    "id": "2025-ea-ai-readiness-thought-leaders",
+    "date": "2025-02-18",
+    "end_date": null,
+    "type": "cpd",
+    "category": "webinar",
+    "title": "Thought Leaders Series: AI Readiness — Strategy, Technology, and Human Factor",
+    "org": "Engineers Australia",
+    "location": "Online",
+    "speakers": "Rita Arrigo (Strategic Engagement Manager, National AI Centre); Dr Sarah Dods (Advanced Analytics and AI Leader, GHD Digital); Cate Trotter (Senior Manager, Human Centred Design, GHD Digital)",
+    "duration_hours": 1.5,
+    "description": "Panel on AI adoption for engineers — the six pillars of AI readiness (based on ISO 42001), translating AI strategy into practice while managing risk, and the human/cultural factors driving successful technology integration.",
+    "tags": ["AI", "strategy", "change management", "ISO 42001"],
+    "credential_url": null,
+    "link": "https://www.youtube.com/watch?v=uQ-e_npXkZo"
   }
 ]
