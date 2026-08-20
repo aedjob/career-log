@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import EVENTS from "./data/events.json";
 
 function formatYear(d) {
@@ -9,11 +9,22 @@ function formatRange(start, end) {
   return end ? `${formatYear(start)} – ${formatYear(end)}` : `${formatYear(start)}`;
 }
 
-function Entry({ e }) {
+function Entry({ e, collapsible }) {
+  const [expanded, setExpanded] = useState(false);
+  const hasBody = Boolean(e.description) || (e.tags && e.tags.length > 0);
+  const showBody = !collapsible || expanded || !hasBody;
+  const isClickable = collapsible && hasBody;
+
   return (
     <div
       className="entry"
-      style={{ position: "relative", padding: "18px 16px 18px 20px", marginBottom: 4 }}
+      onClick={isClickable ? () => setExpanded((v) => !v) : undefined}
+      style={{
+        position: "relative",
+        padding: "18px 16px 18px 20px",
+        marginBottom: 4,
+        cursor: isClickable ? "pointer" : "default",
+      }}
     >
       <div
         style={{
@@ -57,6 +68,14 @@ function Entry({ e }) {
             {e.category}
           </span>
         )}
+        {isClickable && (
+          <span
+            className="mono"
+            style={{ fontSize: 11, color: "#55534E", marginLeft: "auto" }}
+          >
+            {expanded ? "−" : "+"}
+          </span>
+        )}
       </div>
       <h3
         style={{
@@ -75,10 +94,10 @@ function Entry({ e }) {
           </span>
         )}
       </h3>
-      {e.description && (
+      {showBody && e.description && (
         <p style={{ margin: "0 0 8px", fontSize: 14, color: "#C4C1B8" }}>{e.description}</p>
       )}
-      {e.tags && e.tags.length > 0 && (
+      {showBody && e.tags && e.tags.length > 0 && (
         <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
           {e.tags.map((tag) => (
             <span key={tag} className="mono" style={{ fontSize: 10, color: "#6B6A63" }}>
@@ -91,7 +110,7 @@ function Entry({ e }) {
   );
 }
 
-function Timeline({ entries }) {
+function Timeline({ entries, collapsible }) {
   return (
     <div style={{ position: "relative", paddingLeft: 24 }}>
       <div
@@ -105,7 +124,7 @@ function Timeline({ entries }) {
         }}
       />
       {entries.map((e) => (
-        <Entry key={e.id} e={e} />
+        <Entry key={e.id} e={e} collapsible={collapsible} />
       ))}
     </div>
   );
@@ -232,7 +251,7 @@ export default function CareerLog() {
           <h2 className="section-heading" style={{ marginTop: 40 }}>
             Work
           </h2>
-          <Timeline entries={work} />
+          <Timeline entries={work} collapsible />
         </section>
 
         <section id="education-cpd">
