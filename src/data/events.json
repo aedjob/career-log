@@ -375,5 +375,21 @@
     "tags": ["risk management", "insurance", "professional indemnity", "contracts"],
     "credential_url": null,
     "link": "https://portal.engineersaustralia.org.au/event/2023/05/risk-mitigation-and-management-fundamentals-risk-management-48681"
+  },
+  {
+    "id": "2023-ea-global-talent-career-progression",
+    "date": "2023-03-14",
+    "end_date": null,
+    "type": "cpd",
+    "category": "networking",
+    "title": "Global Engineering Talent Networking Series: Planning for Career Progression",
+    "org": "Engineers Australia",
+    "location": "Melbourne, VIC",
+    "speakers": null,
+    "duration_hours": 2,
+    "description": "Networking session on career progression for engineers — developing skills for current and future roles, industry involvement, and qualifications/recognitions that support advancement, with a focus on supporting migrant engineers entering the workforce.",
+    "tags": ["networking", "career progression", "professional development"],
+    "credential_url": null,
+    "link": "https://portal.engineersaustralia.org.au/event/2023/09/global-engineering-talent-networking-series%3A-planning-for-career-progression-51061"
   }
 ]
