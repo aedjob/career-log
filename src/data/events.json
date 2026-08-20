@@ -57,7 +57,8 @@
     "org": "Fulcrum Procurement",
     "location": "Melbourne AU",
     "description": "Supported procurement processes through data validation and report generation, ensuring accuracy and reliability in decision-making. Optimised consulting services by leveraging data-driven insights, resulting in improved procurement strategies and outcomes for clients. Hired as a consultant after successfully completing a project during the final semester at RMIT, demonstrating expertise and dedication to delivering high-quality results.",
-    "tags": ["procurement", "data validation"]
+    "tags": ["procurement", "data validation"],
+    "link": "https://www.linkedin.com/company/fulcrum-procurement/about/"
   },
   {
     "id": "2017-rmit-masters-gap",
@@ -92,7 +93,8 @@
     "org": "Groupon",
     "location": "Buenos Aires AR",
     "description": "Developed reports, dashboards and conducted data analysis to enable data-driven decisions, measure performance and identify trends across internal business areas. Conducted process mapping, audits, and implemented automation solutions for Sales & Operations Planning (S&OP) processes, resulting in improved efficiency and streamlined operations. Provided valuable insights through analysing historical sales and supply chain data, informing strategic decision-making and optimising business strategies.",
-    "tags": ["BI", "S&OP", "automation"]
+    "tags": ["BI", "S&OP", "automation"],
+    "link": "https://www.linkedin.com/company/groupon/about/"
   },
   {
     "id": "2013-abinbev-supply-chain-analyst",
@@ -103,7 +105,8 @@
     "org": "Anheuser-Busch InBev",
     "location": "Buenos Aires AR",
     "description": "Managed end-to-end supply planning, optimising distribution from manufacturing plants to distribution centers for efficient fulfillment. Oversaw internal operations and 3PL (Third-Party Logistics) providers, ensuring seamless supply chain operations and timely delivery. Provided assistance and support to internal stakeholders, addressing supply chain issues and maintaining smooth operations across distribution centers, warehouses and stores. Coordinated and optimised supply chain activities, liaising with 12 distribution centers, 2 manufacturing plants and 5 warehouses nationwide.",
-    "tags": ["supply planning", "3PL", "distribution"]
+    "tags": ["supply planning", "3PL", "distribution"],
+    "link": "https://www.linkedin.com/company/ab-inbev/about/"
   },
   {
     "id": "2011-tenaris-training-assistant",
@@ -114,7 +117,8 @@
     "org": "Tenaris",
     "location": "Buenos Aires AR",
     "description": "Owned end-to-end monitoring of internal employees' training performance, delivered regular progress reports to internal clients, served as key liaison between HR Training & Development and 10+ regions worldwide, and provided critical reporting support to supervisors during budgeting periods.",
-    "tags": []
+    "tags": [],
+    "link": "https://www.linkedin.com/company/tenaris/about/"
   },
   {
     "id": "2017-rmit-masters-statistics",
