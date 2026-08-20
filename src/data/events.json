@@ -311,5 +311,21 @@
     "tags": ["AI", "GenAI", "LLMs", "engineering practice"],
     "credential_url": null,
     "link": "https://portal.engineersaustralia.org.au/event/2024/10/fundamentals-of-generative-ai-%28genai%29-for-engineers-55761"
+  },
+  {
+    "id": "2024-ea-industry-4-advanced-manufacturing",
+    "date": "2024-07-12",
+    "end_date": null,
+    "type": "cpd",
+    "category": "webinar",
+    "title": "Thought Leaders Series: Industry 4.0 and Beyond in Advanced Manufacturing",
+    "org": "Engineers Australia",
+    "location": "Online (EA On-Demand)",
+    "speakers": "Volker Richter (BMW Group); A/Prof David Holmes (QUT)",
+    "duration_hours": 1.5,
+    "description": "Webinar on BMW's 'Lean, Green, Digital' iFactory vision — how sustainability and digitisation in advanced manufacturing are extending Lean principles under Industry 4.0, and their role as a foundation for emerging Industry 5.0 concepts.",
+    "tags": ["Industry 4.0", "manufacturing", "sustainability", "digitisation"],
+    "credential_url": null,
+    "link": "https://portal.engineersaustralia.org.au/event/2023/10/thought-leaders-series%3A-industry-4.0-and-beyond-in-advanced-manufacturing-51551"
   }
 ]
