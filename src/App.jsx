@@ -65,12 +65,12 @@ function Entry({ e, collapsible }) {
   const showBody = !collapsible || expanded || !hasBody;
   const isExpandable = collapsible && hasBody;
 
-  const cpdUrl = e.type === "cpd" ? e.credential_url || e.link : null;
-  const isClickable = isExpandable || Boolean(cpdUrl);
+  const entryUrl = e.type === "cpd" ? e.credential_url || e.link : e.link;
+  const isClickable = isExpandable || Boolean(entryUrl);
 
   function handleClick() {
-    if (cpdUrl) {
-      window.open(cpdUrl, "_blank", "noopener,noreferrer");
+    if (entryUrl) {
+      window.open(entryUrl, "_blank", "noopener,noreferrer");
       return;
     }
     if (isExpandable) setExpanded((v) => !v);
@@ -137,7 +137,7 @@ function Entry({ e, collapsible }) {
             {expanded ? "−" : "+"}
           </span>
         )}
-        {!isExpandable && cpdUrl && (
+        {!isExpandable && entryUrl && (
           <span
             className="mono"
             style={{ fontSize: 11, color: "#55534E", marginLeft: "auto" }}

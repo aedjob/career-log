@@ -22,7 +22,8 @@
     "org": "Chemist Warehouse",
     "location": "Melbourne/Perth AU",
     "description": "Redesigned stock investigation processes and reporting systems across multiple distribution centers, built operational dashboards for planning, warehouse management and procurement, led the inbound process redesign at ePharmacy's main DC, and built a supplier performance analysis framework.",
-    "tags": ["Power BI", "process redesign", "SOPs", "supplier performance"]
+    "tags": ["Power BI", "process redesign", "SOPs", "supplier performance"],
+    "link": "https://www.linkedin.com/company/my-chemist-warehouse-group/about/"
   },
   {
     "id": "2020-freelance-data-consultant",
@@ -111,7 +112,7 @@
     "title": "Training Assistant",
     "org": "Tenaris",
     "location": "Buenos Aires AR",
-    "description": null,
+    "description": "Monitored internal employees' training performance, generated regular progress reports for internal clients, liaised between HR Training & Development and 10+ regions worldwide, and provided reporting support to supervisors during budgeting periods.",
     "tags": []
   },
   {
