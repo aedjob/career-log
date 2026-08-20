@@ -295,5 +295,21 @@
     "tags": ["AI", "strategy", "change management", "ISO 42001"],
     "credential_url": null,
     "link": "https://www.youtube.com/watch?v=uQ-e_npXkZo"
+  },
+  {
+    "id": "2024-ea-genai-fundamentals-engineers",
+    "date": "2024-11-19",
+    "end_date": null,
+    "type": "cpd",
+    "category": "webinar",
+    "title": "Fundamentals of Generative AI (GenAI) for Engineers",
+    "org": "Engineers Australia",
+    "location": "Online",
+    "speakers": "Professor Eduard Hovy (Executive Director, Melbourne Connect); Jenny Mitchell (General Manager, Policy and Advocacy, Engineers Australia)",
+    "duration_hours": 1.5,
+    "description": "Introductory session on Generative AI and LLMs for engineers — foundational concepts, current capabilities and limitations, ethical/security/regulatory considerations, and findings from an EA report on how GenAI is transforming the engineering profession and workforce.",
+    "tags": ["AI", "GenAI", "LLMs", "engineering practice"],
+    "credential_url": null,
+    "link": "https://portal.engineersaustralia.org.au/event/2024/10/fundamentals-of-generative-ai-%28genai%29-for-engineers-55761"
   }
 ]
