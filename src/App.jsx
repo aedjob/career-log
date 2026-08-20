@@ -9,6 +9,20 @@ function formatRange(start, end) {
   return end ? `${formatYear(start)} – ${formatYear(end)}` : `${formatYear(start)}`;
 }
 
+function formatMonthYear(d) {
+  return new Date(d + "T00:00:00").toLocaleDateString("en-US", {
+    month: "short",
+    year: "numeric",
+  });
+}
+
+function formatCpdRange(start, end) {
+  const startLabel = formatMonthYear(start);
+  if (!end) return startLabel;
+  const endLabel = formatMonthYear(end);
+  return startLabel === endLabel ? startLabel : `${startLabel} – ${endLabel}`;
+}
+
 function Entry({ e, collapsible }) {
   const [expanded, setExpanded] = useState(false);
   const hasBody = Boolean(e.description) || (e.tags && e.tags.length > 0);
@@ -51,7 +65,7 @@ function Entry({ e, collapsible }) {
           className="mono"
           style={{ fontSize: 12, color: e.muted ? "#8A8779" : "#2aeccf" }}
         >
-          {formatRange(e.date, e.end_date)}
+          {e.type === "cpd" ? formatCpdRange(e.date, e.end_date) : formatRange(e.date, e.end_date)}
         </span>
         {e.type === "cpd" && (
           <span
@@ -97,7 +111,7 @@ function Entry({ e, collapsible }) {
       {showBody && e.description && (
         <p style={{ margin: "0 0 8px", fontSize: 14, color: "#C4C1B8" }}>{e.description}</p>
       )}
-      {showBody && e.tags && e.tags.length > 0 && (
+      {showBody && e.type !== "cpd" && e.tags && e.tags.length > 0 && (
         <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
           {e.tags.map((tag) => (
             <span key={tag} className="mono" style={{ fontSize: 10, color: "#6B6A63" }}>
