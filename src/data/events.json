@@ -215,5 +215,21 @@
     "tags": ["financial planning", "insurance", "risk management", "career"],
     "credential_url": null,
     "link": null
+  },
+  {
+    "id": "2025-ea-secure-agile-networks-webinar",
+    "date": "2025-02-27",
+    "end_date": null,
+    "type": "cpd",
+    "category": "webinar",
+    "title": "Thought Leaders Series: Secure, Agile Networks — Shaping the Future of Industries",
+    "org": "Engineers Australia",
+    "location": "Online",
+    "speakers": "G. Spurring (Nexon Asia Pacific); Ali Ramti (Bright Food)",
+    "duration_hours": 1.5,
+    "description": "Webinar on modern network and security strategy — SD-WAN, SASE and AI-driven threat detection, with a case study on Bright Food's phased network transformation (security hardening, redesign for distributed work, then SD-WAN/SSE rollout for remote and OT environments).",
+    "tags": ["networking", "cybersecurity", "SD-WAN", "cloud"],
+    "credential_url": null,
+    "link": null
   }
 ]
