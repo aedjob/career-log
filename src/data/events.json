@@ -327,5 +327,21 @@
     "tags": ["Industry 4.0", "manufacturing", "sustainability", "digitisation"],
     "credential_url": null,
     "link": "https://portal.engineersaustralia.org.au/event/2023/10/thought-leaders-series%3A-industry-4.0-and-beyond-in-advanced-manufacturing-51551"
+  },
+  {
+    "id": "2024-ea-offshore-wind-australia",
+    "date": "2024-07-12",
+    "end_date": null,
+    "type": "cpd",
+    "category": "webinar",
+    "title": "Offshore Wind Power Generation in Australia",
+    "org": "Engineers Australia",
+    "location": "Online (EA On-Demand)",
+    "speakers": "Chris Amos (Technical Director, Sustainability & Climate Change, Aurecon Australasia)",
+    "duration_hours": 0.25,
+    "description": "Presentation on offshore wind development in Australia, drawing on the presenter's experience with a Gippsland offshore wind feasibility licence application — development/construction tasks, supply chain, ports, grid connection, and workforce challenges, plus a comparison with onshore wind.",
+    "tags": ["offshore wind", "renewable energy", "grid connection", "Australia"],
+    "credential_url": null,
+    "link": "https://eaondemand.engineersaustralia.org.au/Play?pId=0a40c1e7-181b-48ee-9a18-bea7a76fb1af"
   }
 ]
