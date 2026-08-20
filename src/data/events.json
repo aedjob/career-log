@@ -21,7 +21,7 @@
     "title": "Operations Analyst",
     "org": "Chemist Warehouse",
     "location": "Melbourne/Perth AU",
-    "description": "Redesigned stock investigation processes and reporting systems across multiple distribution centers, built operational dashboards for planning, warehouse management and procurement, led the inbound process redesign at ePharmacy's main DC, and built a supplier performance analysis framework.",
+    "description": "Overhauled stock investigation processes and reporting systems across multiple distribution centers, cutting inventory discrepancies and streamlining follow-up procedures. Built operational dashboards driving inventory optimisation, space utilisation and supplier performance analysis for planning, warehouse management and procurement teams. Led the inbound process redesign at ePharmacy's main distribution center, and built a supplier performance analysis framework enabling data-driven procurement decisions.",
     "tags": ["Power BI", "process redesign", "SOPs", "supplier performance"],
     "link": "https://www.linkedin.com/company/my-chemist-warehouse-group/about/"
   },
@@ -33,7 +33,7 @@
     "title": "Data Consultant",
     "org": "Freelance",
     "location": "Remote",
-    "description": "Provided remote data analytics support to clients during the Covid-19 outbreak.",
+    "description": "Delivered remote data analytics support to clients through the Covid-19 outbreak, leveraging data analysis and problem-solving to drive successful outcomes under constrained conditions.",
     "tags": ["freelance", "data analytics"]
   },
   {
@@ -44,8 +44,9 @@
     "title": "Business Analyst",
     "org": "Myer",
     "location": "Melbourne AU",
-    "description": "Ran stakeholder engagement and requirements gathering for the Digital team, designed and maintained metrics and reports for key business decisions, led process mapping with Agile methodologies, and ran e-commerce analytics, A/B testing and UX analysis.",
-    "tags": ["Agile", "e-commerce analytics", "A/B testing", "UX"]
+    "description": "Led stakeholder engagement and requirements gathering for the Digital team, uncovering opportunities that reshaped processes and strategy. Designed and maintained metrics and reporting that drove key business decisions, ran Agile process-mapping initiatives, and delivered e-commerce analytics, A/B testing and UX research to lift website performance and user experience.",
+    "tags": ["Agile", "e-commerce analytics", "A/B testing", "UX"],
+    "link": "https://www.linkedin.com/company/myer/about/"
   },
   {
     "id": "2019-fulcrum-data-consultant",
@@ -55,7 +56,7 @@
     "title": "Data Consultant",
     "org": "Fulcrum Procurement",
     "location": "Melbourne AU",
-    "description": "Supported procurement processes through data validation and report generation. Hired as a consultant after completing a project in the final semester at RMIT.",
+    "description": "Strengthened procurement decision-making through rigorous data validation and report generation, optimising consulting outcomes for clients. Hired as a consultant on the strength of a project delivered in the final semester at RMIT.",
     "tags": ["procurement", "data validation"]
   },
   {
@@ -90,7 +91,7 @@
     "title": "Business Intelligence Analyst",
     "org": "Groupon",
     "location": "Buenos Aires AR",
-    "description": "Developed reports and dashboards for data-driven decisions, ran process mapping and audits, and implemented automation for S&OP processes.",
+    "description": "Built reports and dashboards enabling data-driven decisions across the business, measuring performance and surfacing trends in internal operations. Led process mapping, audits and automation for Sales & Operations Planning (S&OP), driving measurable efficiency gains. Turned historical sales and supply chain data into insights informing strategic decision-making.",
     "tags": ["BI", "S&OP", "automation"]
   },
   {
@@ -101,7 +102,7 @@
     "title": "Supply Chain Analyst",
     "org": "Anheuser-Busch InBev",
     "location": "Buenos Aires AR",
-    "description": "Managed end-to-end supply planning across manufacturing plants and distribution centers, oversaw internal operations and 3PL providers, and coordinated activities across 12 distribution centers, 2 plants and 5 warehouses nationwide.",
+    "description": "Owned end-to-end supply planning from manufacturing to distribution, ensuring efficient fulfilment nationwide. Oversaw internal operations and 3PL providers, resolved supply chain issues for stakeholders across distribution centers, warehouses and stores, and coordinated activities across 12 distribution centers, 2 manufacturing plants and 5 warehouses nationwide.",
     "tags": ["supply planning", "3PL", "distribution"]
   },
   {
@@ -112,7 +113,7 @@
     "title": "Training Assistant",
     "org": "Tenaris",
     "location": "Buenos Aires AR",
-    "description": "Monitored internal employees' training performance, generated regular progress reports for internal clients, liaised between HR Training & Development and 10+ regions worldwide, and provided reporting support to supervisors during budgeting periods.",
+    "description": "Owned end-to-end monitoring of internal employees' training performance, delivered regular progress reports to internal clients, served as key liaison between HR Training & Development and 10+ regions worldwide, and provided critical reporting support to supervisors during budgeting periods.",
     "tags": []
   },
   {
