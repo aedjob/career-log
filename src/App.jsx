@@ -177,8 +177,8 @@ function Entry({ e, collapsible }) {
 
 function Section({ title, entries, collapsibleEntries, filters, yearFilter }) {
   const [open, setOpen] = useState(false);
-  const [activeFilters, setActiveFilters] = useState(new Set());
-  const [activeYears, setActiveYears] = useState(new Set());
+  const [activeFilter, setActiveFilter] = useState(null);
+  const [activeYear, setActiveYear] = useState(null);
 
   const availableYears = useMemo(() => {
     if (!yearFilter) return [];
@@ -188,32 +188,22 @@ function Section({ title, entries, collapsibleEntries, filters, yearFilter }) {
 
   const filteredEntries = useMemo(() => {
     let result = entries;
-    if (filters && activeFilters.size > 0) {
-      const activeTagSets = [...activeFilters].map((label) => filters[label]);
-      result = result.filter(
-        (e) => e.tags && activeTagSets.some((tagSet) => e.tags.some((t) => tagSet.includes(t)))
-      );
+    if (filters && activeFilter) {
+      const tagSet = filters[activeFilter];
+      result = result.filter((e) => e.tags && e.tags.some((t) => tagSet.includes(t)));
     }
-    if (yearFilter && activeYears.size > 0) {
-      result = result.filter((e) => activeYears.has(formatYear(e.date)));
+    if (yearFilter && activeYear) {
+      result = result.filter((e) => formatYear(e.date) === activeYear);
     }
     return result;
-  }, [entries, activeFilters, filters, activeYears, yearFilter]);
+  }, [entries, activeFilter, filters, activeYear, yearFilter]);
 
   function toggleFilter(label) {
-    setActiveFilters((prev) => {
-      const next = new Set(prev);
-      next.has(label) ? next.delete(label) : next.add(label);
-      return next;
-    });
+    setActiveFilter((prev) => (prev === label ? null : label));
   }
 
   function toggleYear(year) {
-    setActiveYears((prev) => {
-      const next = new Set(prev);
-      next.has(year) ? next.delete(year) : next.add(year);
-      return next;
-    });
+    setActiveYear((prev) => (prev === year ? null : year));
   }
 
   return (
@@ -258,9 +248,9 @@ function Section({ title, entries, collapsibleEntries, filters, yearFilter }) {
                     letterSpacing: "0.04em",
                     padding: "5px 10px",
                     border: "1px solid",
-                    borderColor: activeFilters.has(label) ? "#2aeccf" : "#45433E",
-                    background: activeFilters.has(label) ? "#2aeccf" : "transparent",
-                    color: activeFilters.has(label) ? "#262624" : "#C4C1B8",
+                    borderColor: activeFilter === label ? "#2aeccf" : "#45433E",
+                    background: activeFilter === label ? "#2aeccf" : "transparent",
+                    color: activeFilter === label ? "#262624" : "#C4C1B8",
                     cursor: "pointer",
                   }}
                 >
@@ -281,9 +271,9 @@ function Section({ title, entries, collapsibleEntries, filters, yearFilter }) {
                     letterSpacing: "0.04em",
                     padding: "5px 10px",
                     border: "1px solid",
-                    borderColor: activeYears.has(year) ? "#2aeccf" : "#45433E",
-                    background: activeYears.has(year) ? "#2aeccf" : "transparent",
-                    color: activeYears.has(year) ? "#262624" : "#C4C1B8",
+                    borderColor: activeYear === year ? "#2aeccf" : "#45433E",
+                    background: activeYear === year ? "#2aeccf" : "transparent",
+                    color: activeYear === year ? "#262624" : "#C4C1B8",
                     cursor: "pointer",
                   }}
                 >
