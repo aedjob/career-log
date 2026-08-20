@@ -274,7 +274,7 @@ export default function CareerLog() {
 
       <main style={{ maxWidth: 880, margin: "0 auto", padding: "40px 24px 80px" }}>
         <Section title="Projects" entries={projects} />
-        <Section title="Work" entries={work} collapsibleEntries />
+        <Section title="Work" entries={work} />
         <Section title="Education" entries={education} />
         <Section title="CPD" entries={cpd} />
       </main>
