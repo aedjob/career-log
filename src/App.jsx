@@ -214,19 +214,6 @@ export default function CareerLog() {
           margin: "0 auto",
         }}
       >
-        <div
-          className="mono"
-          style={{
-            fontSize: 11,
-            letterSpacing: "0.08em",
-            textTransform: "uppercase",
-            color: "#8A8779",
-            marginBottom: 10,
-          }}
-        >
-          Professional Log — Rev.{" "}
-          {new Date().toLocaleDateString("en-US", { month: "short", year: "numeric" })}
-        </div>
         <h1
           style={{
             fontFamily: "'IBM Plex Mono', monospace",
@@ -263,7 +250,8 @@ export default function CareerLog() {
         }}
       >
         <p className="mono" style={{ fontSize: 11, color: "#6B6A63", margin: 0 }}>
-          {EVENTS.length} entries logged · data structure defined in events.json
+          Professional Log — Rev.{" "}
+          {new Date().toLocaleDateString("en-US", { month: "short", year: "numeric" })}
         </p>
       </footer>
     </div>
