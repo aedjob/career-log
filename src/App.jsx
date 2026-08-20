@@ -154,10 +154,6 @@ export default function CareerLog() {
     []
   );
 
-  function scrollTo(id) {
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-  }
-
   return (
     <div
       style={{
@@ -172,17 +168,6 @@ export default function CareerLog() {
         * { box-sizing: border-box; }
         .mono { font-family: 'IBM Plex Mono', monospace; }
         .entry:hover { background: #2E2D2A; }
-        .nav-link {
-          background: none;
-          border: none;
-          padding: 0;
-          cursor: pointer;
-          font-size: 12px;
-          letter-spacing: 0.04em;
-          color: #2aeccf;
-          text-decoration: underline;
-          text-underline-offset: 3px;
-        }
         .section-heading {
           font-family: 'IBM Plex Mono', monospace;
           font-size: 13px;
@@ -230,17 +215,9 @@ export default function CareerLog() {
         <p style={{ margin: "0 0 4px", fontSize: 15, color: "#C4C1B8", maxWidth: 560 }}>
           Industrial Engineer (UTN) · M.Sc. Statistics &amp; Operations Research (RMIT)
         </p>
-        <p className="mono" style={{ margin: "0 0 16px", fontSize: 12, color: "#8A8779" }}>
+        <p className="mono" style={{ margin: 0, fontSize: 12, color: "#8A8779" }}>
           Supply Chain &amp; Operations
         </p>
-        <div style={{ display: "flex", gap: 20 }}>
-          <button className="mono nav-link" onClick={() => scrollTo("work-projects")}>
-            Work &amp; Projects →
-          </button>
-          <button className="mono nav-link" onClick={() => scrollTo("education-cpd")}>
-            Education &amp; CPD →
-          </button>
-        </div>
       </header>
 
       <main style={{ maxWidth: 880, margin: "0 auto", padding: "40px 24px 80px" }}>
