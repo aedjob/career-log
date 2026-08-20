@@ -151,5 +151,21 @@
     "tags": ["logistics", "supply chain", "trade show"],
     "credential_url": null,
     "link": "https://www.expologisti-k.com.ar/"
+  },
+  {
+    "id": "2026-expo-transporte-arceo-talk",
+    "date": "2026-08-13",
+    "end_date": null,
+    "type": "cpd",
+    "category": "seminar",
+    "title": "Evolución reciente del mercado de combustibles en la Argentina (Recent evolution of the fuel market in Argentina)",
+    "org": "Expo Transporte",
+    "location": "La Rural, Buenos Aires AR",
+    "speakers": "Nicolás Arceo (Director, Economía y Energía)",
+    "duration_hours": 1,
+    "description": "Talk on the recent evolution of Argentina's fuel market, held as part of Expo Transporte's conference program.",
+    "tags": ["energy", "fuel market", "economics", "Argentina"],
+    "credential_url": null,
+    "link": null
   }
 ]
