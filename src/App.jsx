@@ -1,6 +1,33 @@
 import { useMemo, useState } from "react";
 import EVENTS from "./data/events.json";
 
+const CPD_FILTERS = {
+  "AI & Technology": [
+    "AI",
+    "GenAI",
+    "LLMs",
+    "cybersecurity",
+    "SD-WAN",
+    "cloud",
+    "data analytics",
+    "ISO 42001",
+    "Industry 4.0",
+    "digitisation",
+    "robotics",
+    "medical robotics",
+  ],
+  Energy: [
+    "energy",
+    "fuel market",
+    "energy management",
+    "sustainability",
+    "offshore wind",
+    "renewable energy",
+    "grid connection",
+  ],
+  "Supply Chain & Logistics": ["logistics", "supply chain", "trade show", "last mile"],
+};
+
 function formatYear(d) {
   return new Date(d + "T00:00:00").getFullYear();
 }
@@ -148,8 +175,26 @@ function Entry({ e, collapsible }) {
   );
 }
 
-function Section({ title, entries, collapsibleEntries }) {
+function Section({ title, entries, collapsibleEntries, filters }) {
   const [open, setOpen] = useState(false);
+  const [activeFilters, setActiveFilters] = useState(new Set());
+
+  const filteredEntries = useMemo(() => {
+    if (!filters || activeFilters.size === 0) return entries;
+    const activeTagSets = [...activeFilters].map((label) => filters[label]);
+    return entries.filter(
+      (e) => e.tags && activeTagSets.some((tagSet) => e.tags.some((t) => tagSet.includes(t)))
+    );
+  }, [entries, activeFilters, filters]);
+
+  function toggleFilter(label) {
+    setActiveFilters((prev) => {
+      const next = new Set(prev);
+      next.has(label) ? next.delete(label) : next.add(label);
+      return next;
+    });
+  }
+
   return (
     <div style={{ marginBottom: 32 }}>
       <button
@@ -178,7 +223,34 @@ function Section({ title, entries, collapsibleEntries }) {
           ({entries.length})
         </span>
       </button>
-      {open && <Timeline entries={entries} collapsible={collapsibleEntries} />}
+      {open && (
+        <>
+          {filters && (
+            <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginBottom: 16 }}>
+              {Object.keys(filters).map((label) => (
+                <button
+                  key={label}
+                  onClick={() => toggleFilter(label)}
+                  className="mono"
+                  style={{
+                    fontSize: 11,
+                    letterSpacing: "0.04em",
+                    padding: "5px 10px",
+                    border: "1px solid",
+                    borderColor: activeFilters.has(label) ? "#2aeccf" : "#45433E",
+                    background: activeFilters.has(label) ? "#2aeccf" : "transparent",
+                    color: activeFilters.has(label) ? "#262624" : "#C4C1B8",
+                    cursor: "pointer",
+                  }}
+                >
+                  {label}
+                </button>
+              ))}
+            </div>
+          )}
+          <Timeline entries={filteredEntries} collapsible={collapsibleEntries} />
+        </>
+      )}
     </div>
   );
 }
@@ -276,7 +348,7 @@ export default function CareerLog() {
         <Section title="Projects" entries={projects} />
         <Section title="Work" entries={work} />
         <Section title="Education" entries={education} />
-        <Section title="CPD" entries={cpd} />
+        <Section title="CPD" entries={cpd} filters={CPD_FILTERS} />
       </main>
 
       <footer
