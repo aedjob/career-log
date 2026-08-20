@@ -167,5 +167,21 @@
     "tags": ["energy", "fuel market", "economics", "Argentina"],
     "credential_url": null,
     "link": null
+  },
+  {
+    "id": "2026-cai-robotica-industrias",
+    "date": "2026-08-19",
+    "end_date": null,
+    "type": "cpd",
+    "category": "seminar",
+    "title": "Implementación de la robótica en industrias (Implementation of robotics in industries)",
+    "org": "Centro Argentino de Ingenieros (CAI)",
+    "location": "Biblioteca del CAI, CABA",
+    "speakers": "PhD. Ing. Roberto A. Bunge (UdeSA — Director, Ing. en Inteligencia Artificial / Director, Depto. de Ingeniería); Ing. Javier Mascheroni (PAE — Gerente Ejecutivo, Gestión de Activos)",
+    "duration_hours": 2,
+    "description": "Seminar on how robotics is driving innovation and transformation in industry.",
+    "tags": ["robotics", "industry", "innovation", "energy"],
+    "credential_url": null,
+    "link": "https://www.eventbrite.com.ar/e/implementacion-de-la-robotica-en-industrias-tickets-1993926022408"
   }
 ]
