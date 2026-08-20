@@ -263,5 +263,21 @@
     "tags": ["negotiation", "communication", "early career", "soft skills"],
     "credential_url": null,
     "link": "https://portal.engineersaustralia.org.au/event/2024/09/early-career-cpd%3A-strengthening-negotiation-skills-to-create-win-win-solutions-55286"
+  },
+  {
+    "id": "2025-ea-ignite-kick-off",
+    "date": "2025-02-18",
+    "end_date": null,
+    "type": "cpd",
+    "category": "networking",
+    "title": "Ignite Kick-off",
+    "org": "Engineers Australia",
+    "location": "Melbourne, VIC",
+    "speakers": null,
+    "duration_hours": 1.25,
+    "description": "First of a three-part networking series connecting industry leaders with early-career engineers, focused on mentorship and professional connection within the engineering community.",
+    "tags": ["networking", "mentorship", "early career"],
+    "credential_url": null,
+    "link": null
   }
 ]
