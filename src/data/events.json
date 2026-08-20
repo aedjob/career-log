@@ -199,5 +199,21 @@
     "tags": ["supply chain", "logistics", "last mile", "AI"],
     "credential_url": null,
     "link": "https://info.sclaa.com.au/event-6761711"
+  },
+  {
+    "id": "2026-ea-industry-partners-uncertainty-webinar",
+    "date": "2026-08-18",
+    "end_date": null,
+    "type": "cpd",
+    "category": "webinar",
+    "title": "Industry Partners Series: Planning for Uncertainty in Engineering Careers",
+    "org": "Engineers Australia",
+    "location": "Online",
+    "speakers": "Mark Everingham (Founder, Personal Risk Professionals); Richard Hopwood (PPS Mutual)",
+    "duration_hours": 1.5,
+    "description": "Webinar on financial planning and personal insurance for engineers — income protection, TPD, life and trauma cover, how policy structure (inside vs. outside super) affects tax and claims, and the risks of relying on default super cover.",
+    "tags": ["financial planning", "insurance", "risk management", "career"],
+    "credential_url": null,
+    "link": null
   }
 ]
