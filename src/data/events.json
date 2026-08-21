@@ -493,5 +493,21 @@
     "tags": ["data analytics", "government", "ethics", "data science"],
     "credential_url": null,
     "link": "https://www.linkedin.com/posts/activity-6592029787227856896-9B9o?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAxpj6MB_EB-Bmut-NSdjukqPEnvQoNkffw"
+  },
+  {
+    "id": "2023-linkedin-learning-lean-inventory-management",
+    "date": "2023-06-30",
+    "end_date": null,
+    "type": "cpd",
+    "category": "course",
+    "title": "Lean Inventory Management",
+    "org": "LinkedIn Learning",
+    "location": "Online",
+    "speakers": "Steven Brown",
+    "duration_hours": 1.15,
+    "description": "Course on Lean principles applied to inventory management — eliminating waste, reducing costs and improving quality; tools like 5S and Kanban; standardizing parts and quality-at-source tactics; and strategies for managing supplier inventories, controlling inventory buffers, and building a lean culture for continuous improvement.",
+    "tags": ["Lean", "inventory management", "supply chain", "process improvement"],
+    "credential_url": "https://www.linkedin.com/learning/certificates/1e4aed46163352765b4bceb1766396c4db685409aee8b09f191edbfed493cf2b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BqKhW%2Bm%2FYRwmYvagvSdk8kg%3D%3D",
+    "link": null
   }
 ]
