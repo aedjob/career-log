@@ -174,7 +174,7 @@ function Entry({ e, collapsible }) {
       {showBody && e.description && (
         <p style={{ margin: "0 0 8px", fontSize: 14, color: "#C4C1B8" }}>{e.description}</p>
       )}
-      {showBody && e.type !== "cpd" && e.type !== "job" && e.tags && e.tags.length > 0 && (
+      {showBody && e.type !== "cpd" && e.type !== "job" && e.type !== "education" && e.tags && e.tags.length > 0 && (
         <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
           {e.tags.map((tag) => (
             <span key={tag} className="mono" style={{ fontSize: 10, color: "#6B6A63" }}>
