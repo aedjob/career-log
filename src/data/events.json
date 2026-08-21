@@ -397,5 +397,21 @@
     "tags": ["networking", "career progression", "professional development"],
     "credential_url": null,
     "link": "https://portal.engineersaustralia.org.au/event/2023/09/global-engineering-talent-networking-series%3A-planning-for-career-progression-51061"
+  },
+  {
+    "id": "2020-coursera-gcp-advanced-bigquery",
+    "date": "2020-12-19",
+    "end_date": null,
+    "type": "cpd",
+    "category": "course",
+    "title": "Achieving Advanced Insights with BigQuery",
+    "org": "Coursera / Google Cloud",
+    "location": "Online",
+    "speakers": null,
+    "duration_hours": 9,
+    "description": "Course on advanced BigQuery — SQL functions beyond the basics, how BigQuery's architecture addresses the scaling limits of traditional databases, query performance optimization, and permission-control/data-sharing tools within Google Cloud.",
+    "tags": ["BigQuery", "SQL", "data analytics", "cloud", "performance tuning", "data security", "Google Cloud Platform"],
+    "credential_url": "https://coursera.org/share/f90ee0b1fd2bc252cc4f3a2e6c834e2d",
+    "link": "https://www.coursera.org/learn/gcp-advanced-insights-bigquery"
   }
 ]
