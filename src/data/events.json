@@ -638,5 +638,21 @@
     "tags": ["Agile", "user stories", "project management"],
     "credential_url": "https://www.linkedin.com/learning/certificates/9e831d988e0fdabb2c057ef6150843bbf4e0042e60e83db937652c1547830d9d?trk=backfilled_certificate&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BEmJo1EgDS8yefZ%2F%2Bf8PmlA%3D%3D",
     "link": null
+  },
+  {
+    "id": "2017-ielts-academic-british-council",
+    "date": "2017-04-01",
+    "end_date": null,
+    "type": "cpd",
+    "category": "certification",
+    "title": "IELTS (International English Language Testing System) — Academic Training",
+    "org": "British Council",
+    "location": "Melbourne Polytechnic (AU165)",
+    "speakers": null,
+    "duration_hours": null,
+    "description": "Achieved an overall band score of 8/9 on the IELTS Academic Training test. Credential ID 16AU005339JOBA165A.",
+    "tags": ["English proficiency", "language certification"],
+    "credential_url": "https://drive.google.com/file/d/0Bwv26MLJ1oc2ZWd4Zk5TQkdUNzA/view?resourcekey=0-iXvy6ByarcsM7Ahs62gHaw",
+    "link": null
   }
 ]
