@@ -128,8 +128,9 @@
     "title": "Master's Degree — Statistics and Operations Research",
     "org": "RMIT University",
     "location": "Melbourne AU",
-    "description": null,
-    "tags": []
+    "description": "Graduated with a GPA of 3.0 (Distinction). Completed an Applied Research Project — \"Harnessing Open Data Sources\" — scoring 89/100, under Course Coordinator Dr Yan Wang and industry partner Fulcrum Procurement Australia: identified and extracted key commodity prices in the food manufacturing industry from reliable sources, assessed commodity price and index fluctuations, and built a dashboard that automatically sources relevant time series data and reflects it on the client's website. Played for the RMIT Futsal Team.",
+    "tags": ["R", "Shiny", "data visualization", "open data", "commodity prices"],
+    "link": "https://fulcrum.shinyapps.io/commodityprices/"
   },
   {
     "id": "2009-utn-bachelor-industrial-engineering",
@@ -139,7 +140,7 @@
     "title": "Bachelor's Degree — Industrial Engineering",
     "org": "Universidad Tecnológica Nacional",
     "location": "Buenos Aires AR",
-    "description": null,
+    "description": "Graduated with a final grade of 7.5/10. Played for the UTN Football Team.",
     "tags": []
   },
   {
