@@ -413,5 +413,21 @@
     "tags": ["BigQuery", "SQL", "data analytics", "cloud", "performance tuning", "data security", "Google Cloud Platform"],
     "credential_url": "https://coursera.org/share/f90ee0b1fd2bc252cc4f3a2e6c834e2d",
     "link": "https://www.coursera.org/learn/gcp-advanced-insights-bigquery"
+  },
+  {
+    "id": "2020-coursera-gcp-bigquery-datasets-visualization",
+    "date": "2020-12-19",
+    "end_date": null,
+    "type": "cpd",
+    "category": "course",
+    "title": "Creating New BigQuery Datasets and Visualizing Insights",
+    "org": "Coursera / Google Cloud",
+    "location": "Online",
+    "speakers": null,
+    "duration_hours": 7,
+    "description": "Second course in Google Cloud's 'From Data to Insights' specialization — creating permanent/temporary tables from query results, loading and creating new BigQuery datasets, SQL JOINs vs. UNIONs across multiple data sources, and building dashboards/visualizations in Google Data Studio.",
+    "tags": ["BigQuery", "SQL", "data visualization", "Google Data Studio", "Google Cloud Platform"],
+    "credential_url": "https://coursera.org/share/0ff09d6f756bcab1855aa61f829fef62",
+    "link": "https://www.coursera.org/learn/gcp-creating-bigquery-datasets-visualizing-insights"
   }
 ]
