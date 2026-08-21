@@ -606,5 +606,21 @@
     "tags": ["Agile", "meetings", "leadership"],
     "credential_url": "https://www.linkedin.com/learning/certificates/b4bb9aed36f3e1cd9682cd77363157f5046edcedcd11070dfb2482bb3256e780?trk=backfilled_certificate&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BEmJo1EgDS8yefZ%2F%2Bf8PmlA%3D%3D",
     "link": null
+  },
+  {
+    "id": "2020-linkedin-learning-agile-building-team",
+    "date": "2020-03-15",
+    "end_date": null,
+    "type": "cpd",
+    "category": "course",
+    "title": "Agile at Work: Building Your Agile Team",
+    "org": "LinkedIn Learning",
+    "location": "Online",
+    "speakers": "Doug Rose",
+    "duration_hours": 0.9,
+    "description": "Course on assembling and structuring an effective agile team — roles, responsibilities, and team dynamics within an agile working environment.",
+    "tags": ["Agile", "team building", "leadership"],
+    "credential_url": "https://www.linkedin.com/learning/certificates/b104092dea66f3471cb21ad06c3e8ee09a3e8424dc1e8a094fcfa184d5eaf4ef?trk=backfilled_certificate&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BEmJo1EgDS8yefZ%2F%2Bf8PmlA%3D%3D",
+    "link": null
   }
 ]
