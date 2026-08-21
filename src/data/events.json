@@ -558,5 +558,21 @@
     "tags": ["Lean Six Sigma", "DMAIC", "process improvement", "quality management"],
     "credential_url": "https://www.linkedin.com/learning/certificates/4ff786b21bcc0bc47652482d9be14bd1ada2e3e5bb01557bb11060cb81e930af?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bmz2HAYXkQ66uJ%2BdvF9su4w%3D%3D",
     "link": "https://www.linkedin.com/learning/lean-six-sigma-analyze-improve-and-control-tools"
+  },
+  {
+    "id": "2022-linkedin-learning-lss-define-measure",
+    "date": "2022-10-07",
+    "end_date": null,
+    "type": "cpd",
+    "category": "course",
+    "title": "Lean Six Sigma: Define and Measure Tools",
+    "org": "LinkedIn Learning",
+    "location": "Online",
+    "speakers": "Dr. Richard Chua (Certified Lean Six Sigma Master Black Belt trainer)",
+    "duration_hours": 1.4,
+    "description": "Companion course to Analyze, Improve and Control Tools, covering the Define and Measure phases of DMAIC — the project charter, process mapping (including swimlane maps), Pareto charts for identifying problem areas, Critical-to-Quality (CTQ) requirements, repeatability, process variation, and process capability (Cp).",
+    "tags": ["Lean Six Sigma", "DMAIC", "process improvement", "quality management"],
+    "credential_url": "https://www.linkedin.com/learning/certificates/64ef5f4ee475931dbb567ce63b58b5d4984cd017da6ddb0c1772bf46ea503ae2?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bmz2HAYXkQ66uJ%2BdvF9su4w%3D%3D",
+    "link": "https://www.linkedin.com/learning/lean-six-sigma-define-and-measure-tools"
   }
 ]
