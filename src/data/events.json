@@ -590,5 +590,21 @@
     "tags": ["Six Sigma", "DMAIC", "process improvement", "quality management"],
     "credential_url": "https://www.linkedin.com/learning/certificates/04553f55a8599c19d2857bd6a84a56e7b083c90f9a62fca3f605db457c2197ab?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bmz2HAYXkQ66uJ%2BdvF9su4w%3D%3D",
     "link": "https://www.linkedin.com/learning/six-sigma-foundations"
+  },
+  {
+    "id": "2020-linkedin-learning-agile-meetings",
+    "date": "2020-03-17",
+    "end_date": null,
+    "type": "cpd",
+    "category": "course",
+    "title": "Agile at Work: Driving Productive Agile Meetings",
+    "org": "LinkedIn Learning",
+    "location": "Online",
+    "speakers": "Doug Rose",
+    "duration_hours": 1,
+    "description": "Course on running effective agile team meetings — standups, sprint planning, retrospectives and other agile ceremonies, and how to keep them focused and valuable rather than a time drain.",
+    "tags": ["Agile", "meetings", "leadership"],
+    "credential_url": "https://www.linkedin.com/learning/certificates/b4bb9aed36f3e1cd9682cd77363157f5046edcedcd11070dfb2482bb3256e780?trk=backfilled_certificate&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BEmJo1EgDS8yefZ%2F%2Bf8PmlA%3D%3D",
+    "link": null
   }
 ]
