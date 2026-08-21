@@ -574,5 +574,21 @@
     "tags": ["Lean Six Sigma", "DMAIC", "process improvement", "quality management"],
     "credential_url": "https://www.linkedin.com/learning/certificates/64ef5f4ee475931dbb567ce63b58b5d4984cd017da6ddb0c1772bf46ea503ae2?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bmz2HAYXkQ66uJ%2BdvF9su4w%3D%3D",
     "link": "https://www.linkedin.com/learning/lean-six-sigma-define-and-measure-tools"
+  },
+  {
+    "id": "2022-linkedin-learning-six-sigma-foundations",
+    "date": "2022-10-07",
+    "end_date": null,
+    "type": "cpd",
+    "category": "course",
+    "title": "Six Sigma Foundations",
+    "org": "LinkedIn Learning",
+    "location": "Online",
+    "speakers": "Dr. Richard Chua (Certified Lean Six Sigma Master Black Belt trainer)",
+    "duration_hours": 1.8,
+    "description": "Foundational course on Six Sigma as a customer-focused, data-driven improvement approach — Critical-to-Quality (CTQ) requirements, variation, defects per million opportunities (DPMO), Six Sigma roles and belts, project selection criteria, and a full walkthrough of the DMAIC phases (Define, Measure, Analyze, Improve, Control). Qualifies for 1.75 PMI PDUs.",
+    "tags": ["Six Sigma", "DMAIC", "process improvement", "quality management"],
+    "credential_url": "https://www.linkedin.com/learning/certificates/04553f55a8599c19d2857bd6a84a56e7b083c90f9a62fca3f605db457c2197ab?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bmz2HAYXkQ66uJ%2BdvF9su4w%3D%3D",
+    "link": "https://www.linkedin.com/learning/six-sigma-foundations"
   }
 ]
