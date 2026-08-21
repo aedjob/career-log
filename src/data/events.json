@@ -487,7 +487,7 @@
     "title": "ATO Data, Analytics and Digital Innovation + Datathon Q&A",
     "org": "Data Science Melbourne",
     "location": "RMIT Building 12 (Gillespie Building), Melbourne VIC",
-    "speakers": "Veli Fikret (Australian Taxation Office); Ying Yang",
+    "speakers": "Veli Fikret (Australian Taxation Office); Ying Yang (Senior Director, Data Science, Australian Taxation Office)",
     "duration_hours": 2,
     "description": "Talk by the Australian Taxation Office on the innovative data-handling techniques required to manage its massive, sensitive datasets, and the ethical and responsible-use boundaries that come with it. Included a masterclass on ATO's data processes and a datathon Q&A.",
     "tags": ["data analytics", "government", "ethics", "data science"],
