@@ -622,5 +622,21 @@
     "tags": ["Agile", "team building", "leadership"],
     "credential_url": "https://www.linkedin.com/learning/certificates/b104092dea66f3471cb21ad06c3e8ee09a3e8424dc1e8a094fcfa184d5eaf4ef?trk=backfilled_certificate&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BEmJo1EgDS8yefZ%2F%2Bf8PmlA%3D%3D",
     "link": null
+  },
+  {
+    "id": "2020-linkedin-learning-agile-user-stories",
+    "date": "2020-03-03",
+    "end_date": null,
+    "type": "cpd",
+    "category": "course",
+    "title": "Agile at Work: Planning with Agile User Stories",
+    "org": "LinkedIn Learning",
+    "location": "Online",
+    "speakers": "Doug Rose",
+    "duration_hours": 0.85,
+    "description": "Course on writing and using agile user stories for requirements and planning — how a backlog of stories is created, sized, prioritized, and used in sprint/iteration planning.",
+    "tags": ["Agile", "user stories", "project management"],
+    "credential_url": "https://www.linkedin.com/learning/certificates/9e831d988e0fdabb2c057ef6150843bbf4e0042e60e83db937652c1547830d9d?trk=backfilled_certificate&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BEmJo1EgDS8yefZ%2F%2Bf8PmlA%3D%3D",
+    "link": null
   }
 ]
