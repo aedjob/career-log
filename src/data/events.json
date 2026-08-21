@@ -429,5 +429,21 @@
     "tags": ["BigQuery", "SQL", "data visualization", "Google Data Studio", "Google Cloud Platform"],
     "credential_url": "https://coursera.org/share/0ff09d6f756bcab1855aa61f829fef62",
     "link": "https://www.coursera.org/learn/gcp-creating-bigquery-datasets-visualizing-insights"
+  },
+  {
+    "id": "2020-coursera-gcp-exploring-preparing-data-bigquery",
+    "date": "2020-12-19",
+    "end_date": null,
+    "type": "cpd",
+    "category": "course",
+    "title": "Exploring and Preparing Your Data with BigQuery",
+    "org": "Coursera / Google Cloud",
+    "location": "Online",
+    "speakers": null,
+    "duration_hours": 8,
+    "description": "First course in Google Cloud's 'From Data to Insights' specialization — core big data tools on Google Cloud, querying with SQL basics in BigQuery, understanding BigQuery pricing/query optimization, and building an automated data cleansing pipeline, including hands-on work with a real Google Analytics e-commerce dataset.",
+    "tags": ["BigQuery", "SQL", "data analytics", "cloud", "Google Cloud Platform"],
+    "credential_url": "https://coursera.org/share/f59b0906883a259194575b84f6968bd8",
+    "link": "https://www.coursera.org/learn/gcp-exploring-preparing-data-bigquery"
   }
 ]
