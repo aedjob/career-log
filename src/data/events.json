@@ -424,7 +424,7 @@
     "org": "Coursera / Google Cloud",
     "location": "Online",
     "speakers": null,
-    "duration_hours": 7,
+    "duration_hours": 8,
     "description": "Second course in Google Cloud's 'From Data to Insights' specialization — creating permanent/temporary tables from query results, loading and creating new BigQuery datasets, SQL JOINs vs. UNIONs across multiple data sources, and building dashboards/visualizations in Google Data Studio.",
     "tags": ["BigQuery", "SQL", "data visualization", "Google Data Studio", "Google Cloud Platform"],
     "credential_url": "https://coursera.org/share/0ff09d6f756bcab1855aa61f829fef62",
