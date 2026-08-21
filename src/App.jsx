@@ -125,7 +125,7 @@ function Entry({ e, collapsible }) {
               letterSpacing: "0.08em",
               textTransform: "uppercase",
               color: e.category === "course" ? "#F5F4F0" : "#8A8779",
-              border: "1px solid #45433E",
+              border: e.category === "course" ? "1px solid #F5F4F0" : "1px solid #45433E",
               padding: "1px 6px",
             }}
           >
