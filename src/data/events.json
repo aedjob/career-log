@@ -510,5 +510,21 @@
     "tags": ["Lean", "inventory management", "supply chain", "process improvement"],
     "credential_url": "https://www.linkedin.com/learning/certificates/1e4aed46163352765b4bceb1766396c4db685409aee8b09f191edbfed493cf2b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BqKhW%2Bm%2FYRwmYvagvSdk8kg%3D%3D",
     "link": null
+  },
+  {
+    "id": "2019-disruptorsintech-ai-ethics",
+    "date": "2019-10-15",
+    "end_date": null,
+    "type": "cpd",
+    "category": "seminar",
+    "title": "Ethics of Artificial Intelligence | #DisruptorsInTech Melbourne",
+    "org": "DisruptorsInTech Melbourne",
+    "location": "Deloitte Australia, Melbourne VIC",
+    "speakers": null,
+    "duration_hours": 2,
+    "description": "Talk and discussion on the ethics of artificial intelligence, hosted as part of the #DisruptorsInTech Melbourne tech community series.",
+    "tags": ["AI", "ethics", "technology"],
+    "credential_url": null,
+    "link": "https://www.eventbrite.com.au/e/ethics-of-artificial-intelligence-disruptorsintech-melbourne-tickets-73077277103"
   }
 ]
