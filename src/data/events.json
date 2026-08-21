@@ -461,5 +461,21 @@
     "tags": ["statistics", "data science"],
     "credential_url": null,
     "link": "https://www.linkedin.com/posts/activity-6595654584243499008-gycb?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAxpj6MB_EB-Bmut-NSdjukqPEnvQoNkffw"
+  },
+  {
+    "id": "2019-rmit-hack-the-future-mixed-reality",
+    "date": "2019-10-21",
+    "end_date": "2019-10-22",
+    "type": "cpd",
+    "category": "hackathon",
+    "title": "RMIT Hack the Future: Mixed Reality Hackathon — powered by Microsoft",
+    "org": "RMIT University / Microsoft",
+    "location": "RMIT University, Melbourne VIC",
+    "speakers": null,
+    "duration_hours": 20,
+    "description": "Two-day hackathon bringing together students and hobbyists across disciplines to reinvent how we learn using Microsoft's HoloLens and Windows Mixed Reality.",
+    "tags": ["mixed reality", "hackathon", "HoloLens", "innovation"],
+    "credential_url": null,
+    "link": "https://www.linkedin.com/posts/activity-6595182583628345344-KtB-?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAxpj6MB_EB-Bmut-NSdjukqPEnvQoNkffw"
   }
 ]
