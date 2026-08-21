@@ -526,5 +526,21 @@
     "tags": ["AI", "ethics", "technology"],
     "credential_url": null,
     "link": "https://www.eventbrite.com.au/e/ethics-of-artificial-intelligence-disruptorsintech-melbourne-tickets-73077277103"
+  },
+  {
+    "id": "2019-power-bi-melbourne-version-updates",
+    "date": "2019-10-09",
+    "end_date": null,
+    "type": "cpd",
+    "category": "seminar",
+    "title": "No 39: The Great Version Updates of Power BI",
+    "org": "Power BI Melbourne",
+    "location": "Cognizant Servian, Docklands VIC",
+    "speakers": "Michael Berry",
+    "duration_hours": 2,
+    "description": "Talk on Power BI's evolution and recent feature updates, including logistic regression models for categorical analysis. Co-sponsored by Sirius Recruitment.",
+    "tags": ["Power BI", "data visualization", "BI"],
+    "credential_url": null,
+    "link": "https://www.linkedin.com/posts/activity-6587876376026710016-qKvA?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAxpj6MB_EB-Bmut-NSdjukqPEnvQoNkffw"
   }
 ]
