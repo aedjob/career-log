@@ -542,5 +542,21 @@
     "tags": ["Power BI", "data visualization", "BI"],
     "credential_url": null,
     "link": "https://www.linkedin.com/posts/activity-6587876376026710016-qKvA?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAxpj6MB_EB-Bmut-NSdjukqPEnvQoNkffw"
+  },
+  {
+    "id": "2022-linkedin-learning-lss-analyze-improve-control",
+    "date": "2022-10-08",
+    "end_date": null,
+    "type": "cpd",
+    "category": "course",
+    "title": "Lean Six Sigma: Analyze, Improve, and Control Tools",
+    "org": "LinkedIn Learning",
+    "location": "Online",
+    "speakers": "Dr. Richard Chua (Certified Lean Six Sigma Master Black Belt trainer)",
+    "duration_hours": 1.35,
+    "description": "Course on fundamental Lean Six Sigma tools for the Analyze, Improve and Control phases of DMAIC — cause-effect diagrams, multi-voting, scatter plots, correlation and regression for analysis; FMEA and Kaizen for process improvement; hypothesis testing, data collection planning, and implementing process controls and value-stream management. Qualifies for 1.25 PMI PDUs.",
+    "tags": ["Lean Six Sigma", "DMAIC", "process improvement", "quality management"],
+    "credential_url": "https://www.linkedin.com/learning/certificates/4ff786b21bcc0bc47652482d9be14bd1ada2e3e5bb01557bb11060cb81e930af?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bmz2HAYXkQ66uJ%2BdvF9su4w%3D%3D",
+    "link": "https://www.linkedin.com/learning/lean-six-sigma-analyze-improve-and-control-tools"
   }
 ]
