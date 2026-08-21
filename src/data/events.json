@@ -445,5 +445,21 @@
     "tags": ["BigQuery", "SQL", "data analytics", "cloud", "Google Cloud Platform"],
     "credential_url": "https://coursera.org/share/f59b0906883a259194575b84f6968bd8",
     "link": "https://www.coursera.org/learn/gcp-exploring-preparing-data-bigquery"
+  },
+  {
+    "id": "2019-belz-lecture-statistics-crown-jewel",
+    "date": "2019-10-31",
+    "end_date": null,
+    "type": "cpd",
+    "category": "seminar",
+    "title": "Statistics is the Crown Jewel of Data Science (Belz Lecture)",
+    "org": "Data Science Melbourne / Statistical Society of Australia",
+    "location": "University of Melbourne, Carlton VIC",
+    "speakers": "Antony Ugoni (Global Matching and Analytics Director, SEEK)",
+    "duration_hours": 1,
+    "description": "Annual Belz Lecture on the importance of staying grounded in core statistics as data science applications advance — ANOVA, randomness, the Central Limit Theorem, and hypothesis testing as foundational concepts underpinning the field.",
+    "tags": ["statistics", "data science"],
+    "credential_url": null,
+    "link": "https://www.linkedin.com/posts/activity-6595654584243499008-gycb?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAxpj6MB_EB-Bmut-NSdjukqPEnvQoNkffw"
   }
 ]
