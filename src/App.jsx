@@ -431,10 +431,11 @@ export default function CareerLog() {
         <h1
           style={{
             fontFamily: "'IBM Plex Mono', monospace",
-            fontWeight: 600,
-            fontSize: "clamp(28px, 5vw, 40px)",
+            fontWeight: 500,
+            fontSize: "clamp(22px, 3.6vw, 30px)",
             margin: "0 0 8px",
-            letterSpacing: "-0.01em",
+            letterSpacing: "0.06em",
+            textTransform: "uppercase",
             color: "#F5F4F0",
           }}
         >
@@ -450,7 +451,8 @@ export default function CareerLog() {
       </header>
 
       <main style={{ maxWidth: 880, margin: "0 auto", padding: "40px 24px 80px" }}>
-        <Section title="Projects" entries={projects} />
+        {/* Projects section hidden until real entries exist — data/schema stays ready, just re-add this line when populated */}
+        {/* <Section title="Projects" entries={projects} /> */}
         <Section title="Work" entries={work} />
         <Section title="Education" entries={education} />
         <Section title="CPD" entries={cpd} filters={CPD_FILTERS} yearFilter />
