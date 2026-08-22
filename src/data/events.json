@@ -745,5 +745,21 @@
     "tags": ["leadership", "cultural intelligence", "professional development"],
     "credential_url": null,
     "link": "https://www.youtube.com/watch?v=6EF6iyZnimk"
+  },
+  {
+    "id": "2018-rmit-activator-negotiation-workshop",
+    "date": "2018-09-27",
+    "end_date": null,
+    "type": "cpd",
+    "category": "workshop",
+    "title": "Activator Skill Up Workshop: The Art of Negotiation",
+    "org": "RMIT Activator",
+    "location": "RMIT Activator, Carlton VIC",
+    "speakers": "Emma-May Litchfield (Co-founder and Director, Resolution Resources)",
+    "duration_hours": 4,
+    "description": "Intensive negotiation workshop covering the difference between strategy and tactics in communication, principles of interest-based negotiation, and developing an authentic negotiating voice.",
+    "tags": ["negotiation", "communication", "workshop"],
+    "credential_url": null,
+    "link": "https://www.eventbrite.com.au/e/activator-skill-up-workshop-the-art-of-negotiation-tickets-49076399833"
   }
 ]
