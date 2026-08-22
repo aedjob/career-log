@@ -434,7 +434,7 @@ export default function CareerLog() {
             fontWeight: 700,
             fontSize: "clamp(19px, 3vw, 25px)",
             margin: "0 0 8px",
-            letterSpacing: "0.06em",
+            letterSpacing: "0.1em",
             textTransform: "uppercase",
             color: "#F5F4F0",
           }}
