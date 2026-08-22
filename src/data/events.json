@@ -761,5 +761,21 @@
     "tags": ["negotiation", "communication", "workshop"],
     "credential_url": null,
     "link": "https://www.eventbrite.com.au/e/activator-skill-up-workshop-the-art-of-negotiation-tickets-49076399833"
+  },
+  {
+    "id": "2018-rmit-activator-develop-an-idea-workshop",
+    "date": "2018-11-29",
+    "end_date": null,
+    "type": "cpd",
+    "category": "workshop",
+    "title": "Activator Skill Up Workshop: Develop an Idea",
+    "org": "RMIT Activator",
+    "location": "RMIT Activator, Carlton VIC",
+    "speakers": null,
+    "duration_hours": 3.5,
+    "description": "Workshop on creative thinking and idea development — generating creative ideas and new perspectives, experimenting with creative thinking techniques, and building a problem-solver mindset.",
+    "tags": ["creative thinking", "problem solving", "workshop"],
+    "credential_url": null,
+    "link": "https://www.eventbrite.com.au/e/activator-skill-up-workshop-develop-an-idea-tickets-51049466328"
   }
 ]
