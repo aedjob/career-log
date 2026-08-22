@@ -665,5 +665,37 @@
     "tags": ["English proficiency", "language certification"],
     "credential_url": "https://drive.google.com/file/d/0Bwv26MLJ1oc2ZWd4Zk5TQkdUNzA/view?resourcekey=0-iXvy6ByarcsM7Ahs62gHaw",
     "link": null
+  },
+  {
+    "id": "2012-cui-portugues-nivel-1",
+    "date": "2012-07-01",
+    "end_date": null,
+    "type": "cpd",
+    "category": "course",
+    "title": "Estudio Superior de Portugués — Nivel I (Ciclo Básico)",
+    "org": "Centro Universitario de Idiomas, Facultad de Agronomía — Universidad de Buenos Aires",
+    "location": "Buenos Aires AR",
+    "speakers": null,
+    "duration_hours": 48,
+    "description": "Completed Level I of the basic cycle of Portuguese language studies, over 4 months at 3 hours per week. Grade: 74/100.",
+    "tags": ["Portuguese", "language"],
+    "credential_url": "https://drive.google.com/file/d/1CbKpgidCP7I4w3AFAxr-RQP4yXEO5L8_/view?usp=sharing",
+    "link": null
+  },
+  {
+    "id": "2012-cui-portugues-nivel-2",
+    "date": "2012-12-01",
+    "end_date": null,
+    "type": "cpd",
+    "category": "course",
+    "title": "Estudio Superior de Portugués — Nivel II (Ciclo Básico)",
+    "org": "Centro Universitario de Idiomas, Facultad de Agronomía — Universidad de Buenos Aires",
+    "location": "Buenos Aires AR",
+    "speakers": null,
+    "duration_hours": 48,
+    "description": "Completed Level II of the basic cycle of Portuguese language studies, over 4 months at 3 hours per week. Grade: 95/100.",
+    "tags": ["Portuguese", "language"],
+    "credential_url": "https://drive.google.com/file/d/152nhscocDpUAKUr8sIjRFXZKTfcRvzEm/view?usp=sharing",
+    "link": null
   }
 ]
