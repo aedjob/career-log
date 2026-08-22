@@ -520,12 +520,8 @@ function CareerLogInner({ theme, onToggleTheme }) {
         >
           Alfredo E. Job
         </h1>
-        <p style={{ margin: "0 0 4px", fontSize: 15, color: t.textBody, maxWidth: 560 }}>
+        <p style={{ margin: "0 0 16px", fontSize: 15, color: t.textBody, maxWidth: 560 }}>
           Industrial Engineer (UTN) · M.Sc. Statistics &amp; Operations Research (RMIT)
-        </p>
-        <p style={{ margin: "0 0 16px", fontSize: 14, color: t.textBody, maxWidth: 560 }}>
-          Industrial Engineer specialising in operations analysis, process improvement, and
-          data-driven supply chain solutions. Currently exploring energy.
         </p>
         <ConnectButton />
       </header>
