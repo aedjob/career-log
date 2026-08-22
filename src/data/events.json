@@ -713,5 +713,21 @@
     "tags": ["English proficiency", "language certification"],
     "credential_url": "https://drive.google.com/file/d/1AxJZ5JbNleF_neQ9wPiPKpkweoeGYPCa/view?usp=sharing",
     "link": null
+  },
+  {
+    "id": "2015-educacion-it-sql-server-2012",
+    "date": "2015-08-25",
+    "end_date": null,
+    "type": "cpd",
+    "category": "course",
+    "title": "Programación con SQL Server 2012 (Programming with SQL Server 2012)",
+    "org": "Educación IT",
+    "location": "Buenos Aires AR",
+    "speakers": null,
+    "duration_hours": 21,
+    "description": "Course on SQL Server 2012 programming.",
+    "tags": ["SQL", "SQL Server", "database"],
+    "credential_url": null,
+    "link": null
   }
 ]
