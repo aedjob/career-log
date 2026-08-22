@@ -697,5 +697,21 @@
     "tags": ["Portuguese", "language"],
     "credential_url": "https://drive.google.com/file/d/152nhscocDpUAKUr8sIjRFXZKTfcRvzEm/view?usp=sharing",
     "link": null
+  },
+  {
+    "id": "2022-pte-academic",
+    "date": "2022-09-02",
+    "end_date": null,
+    "type": "cpd",
+    "category": "certification",
+    "title": "PTE Academic (Pearson Test of English)",
+    "org": "Pearson",
+    "location": "Melbourne Polytechnic, Melbourne VIC",
+    "speakers": null,
+    "duration_hours": null,
+    "description": "Overall score: 85. Listening 90, Reading 84, Speaking 87, Writing 88.",
+    "tags": ["English proficiency", "language certification"],
+    "credential_url": null,
+    "link": null
   }
 ]
