@@ -432,7 +432,7 @@ export default function CareerLog() {
           style={{
             fontFamily: "'IBM Plex Mono', monospace",
             fontWeight: 500,
-            fontSize: "clamp(22px, 3.6vw, 30px)",
+            fontSize: "clamp(19px, 3vw, 25px)",
             margin: "0 0 8px",
             letterSpacing: "0.06em",
             textTransform: "uppercase",
