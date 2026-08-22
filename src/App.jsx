@@ -11,7 +11,7 @@ const THEMES = {
     textSubtle: "#6B6A63",
     border: "#45433E",
     borderIcon: "#55534E",
-    accent: "#2aeccf",
+    accent: "#F5F4F0",
     hoverBg: "#2E2D2A",
   },
   light: {
@@ -100,29 +100,21 @@ function formatCpdRange(start, end) {
 
 function ThemeToggle({ theme, onToggle }) {
   const t = useTheme();
+  const other = THEMES[theme === "dark" ? "light" : "dark"];
   return (
-    <div style={{ display: "flex", gap: 6 }}>
-      {["dark", "light"].map((mode) => (
-        <button
-          key={mode}
-          onClick={() => onToggle(mode)}
-          className="mono"
-          style={{
-            fontSize: 10,
-            letterSpacing: "0.06em",
-            textTransform: "uppercase",
-            padding: "4px 8px",
-            border: "1px solid",
-            borderColor: theme === mode ? t.accent : t.border,
-            background: theme === mode ? t.accent : "transparent",
-            color: theme === mode ? t.bg : t.textMuted,
-            cursor: "pointer",
-          }}
-        >
-          {mode}
-        </button>
-      ))}
-    </div>
+    <button
+      onClick={() => onToggle(theme === "dark" ? "light" : "dark")}
+      aria-label="Toggle color theme"
+      style={{
+        width: 16,
+        height: 16,
+        padding: 0,
+        borderRadius: "50%",
+        border: `1px solid ${t.border}`,
+        background: other.bg,
+        cursor: "pointer",
+      }}
+    />
   );
 }
 
