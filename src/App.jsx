@@ -225,9 +225,18 @@ function Entry({ e, collapsible }) {
         <p style={{ margin: "0 0 8px", fontSize: 14, color: t.textBody }}>{e.description}</p>
       )}
       {showBody && e.bullets && e.bullets.length > 0 && (
-        <ul style={{ margin: "0 0 8px", paddingLeft: 18, fontSize: 14, color: t.textBody }}>
+        <ul
+          style={{
+            margin: "0 0 8px",
+            padding: 0,
+            listStyle: "none",
+            fontSize: 14,
+            color: t.textBody,
+          }}
+        >
           {e.bullets.map((b, i) => (
-            <li key={i} style={{ marginBottom: 4 }}>
+            <li key={i} style={{ marginBottom: 4, paddingLeft: 16, position: "relative" }}>
+              <span style={{ position: "absolute", left: 0, color: t.textMuted }}>–</span>
               {b}
             </li>
           ))}
