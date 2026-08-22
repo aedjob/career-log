@@ -729,5 +729,21 @@
     "tags": ["SQL", "SQL Server", "database"],
     "credential_url": "https://drive.google.com/file/d/1FF67_5v-IkfgK7ncfJVnRL5cN-gnh5eb/view?usp=sharing",
     "link": null
+  },
+  {
+    "id": "2017-rmit-global-leader-experience",
+    "date": "2017-11-27",
+    "end_date": "2017-11-30",
+    "type": "cpd",
+    "category": "program",
+    "title": "RMIT Global Leader Experience",
+    "org": "RMIT University / Common Purpose",
+    "location": "Storey Hall, RMIT University, Melbourne VIC",
+    "speakers": "Michelle Fitzgerald (Chief Digital Officer, City of Melbourne); Michael Nolan (Chair, UN Global Compact Cities Programme); Madeline Wilson (Victoria State Manager, OzHarvest); Alex Lazarus Priestley (Leadership Development Manager, Inspire Group); Donna Stolzenberg (Founder, Melbourne Homeless Collective)",
+    "duration_hours": 34,
+    "description": "Four-day intensive leadership development programme building cultural intelligence and cross-boundary leadership capability, run by Common Purpose in partnership with RMIT University. Included engagement with leaders across government, corporate, not-for-profit and social enterprise sectors. Completion earned RMIT digital badge credentials and membership in Common Purpose's global alumni network.",
+    "tags": ["leadership", "cultural intelligence", "professional development"],
+    "credential_url": null,
+    "link": "https://www.youtube.com/watch?v=6EF6iyZnimk"
   }
 ]
