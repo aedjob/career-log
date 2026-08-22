@@ -431,7 +431,7 @@ export default function CareerLog() {
         <h1
           style={{
             fontFamily: "'IBM Plex Mono', monospace",
-            fontWeight: 500,
+            fontWeight: 700,
             fontSize: "clamp(19px, 3vw, 25px)",
             margin: "0 0 8px",
             letterSpacing: "0.06em",
