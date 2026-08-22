@@ -72,7 +72,8 @@ function Entry({ e, collapsible }) {
   const showBody = !collapsible || expanded || !hasBody;
   const isExpandable = collapsible && hasBody;
 
-  const entryUrl = e.type === "cpd" ? e.credential_url || e.link : e.link;
+  const entryUrl =
+    e.type === "cpd" || e.type === "education" ? e.credential_url || e.link : e.link;
   const isClickable = isExpandable || Boolean(entryUrl);
 
   function handleClick() {

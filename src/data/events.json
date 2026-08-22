@@ -130,6 +130,7 @@
     "location": "Melbourne AU",
     "description": "Graduated with a GPA of 3.0 (Distinction). Completed an Applied Research Project — \"Harnessing Open Data Sources\" — scoring 89/100, under Course Coordinator Dr Yan Wang and industry partner Fulcrum Procurement Australia: identified and extracted key commodity prices in the food manufacturing industry from reliable sources, assessed commodity price and index fluctuations, and built a dashboard that automatically sources relevant time series data and reflects it on the client's website. Played for the RMIT Futsal Team.",
     "tags": ["R", "Shiny", "data visualization", "open data", "commodity prices"],
+    "credential_url": "https://drive.google.com/file/d/1Bc_HxtC_7IQBWIgsYjTHXXhoYszRkuCY/view?usp=sharing",
     "link": "https://fulcrum.shinyapps.io/commodityprices/"
   },
   {
