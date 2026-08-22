@@ -242,6 +242,11 @@ function Entry({ e, collapsible }) {
           ))}
         </ul>
       )}
+      {showBody && e.tools && e.tools.length > 0 && (
+        <p className="mono" style={{ margin: "0 0 8px", fontSize: 11, color: t.textSubtle }}>
+          Tools: {e.tools.join(", ")}
+        </p>
+      )}
       {showBody &&
         e.type !== "cpd" &&
         e.type !== "job" &&

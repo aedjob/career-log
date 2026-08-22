@@ -39,6 +39,13 @@
       "Developed operational dashboards and reports used by planning, warehouse management and procurement teams for inventory optimisation, space utilisation and supplier performance analysis.",
       "Led the inbound process redesign at ePharmacy's main distribution center, creating and implementing SOPs for new workflows, conducting layout efficiency testing, and improving operational agility.",
       "Built a supplier performance analysis framework to measure and track quality metrics, enabling data-driven decisions on procurement and supplier relationships."
+    ],
+    "tools": [
+      "Excel",
+      "Power BI",
+      "Manhattan Scale WMS",
+      "MS Dynamics 365",
+      "Mobile Dock"
     ]
   },
   {
@@ -76,6 +83,14 @@
       "Designed, developed and maintained metrics and reports that provided valuable insights for driving key business decisions.",
       "Led process mapping initiatives and utilised Agile methodologies to ensure the successful execution of projects, resulting in improved efficiency and alignment with business objectives.",
       "Conducted comprehensive research and analysis, including e-commerce analytics, A/B testing and UX analysis, collaborating with a multidisciplinary team to deliver and prioritize the Digital team's backlog and enhance website performance and user experience."
+    ],
+    "tools": [
+      "GCP (BigQuery)",
+      "Google Analytics",
+      "RStudio",
+      "Dynamic Yield",
+      "Confluence",
+      "JIRA"
     ]
   },
   {
@@ -96,6 +111,12 @@
       "Supported procurement processes through data validation and report generation, ensuring accuracy and reliability in decision-making.",
       "Optimised consulting services by leveraging data-driven insights, resulting in improved procurement strategies and outcomes for clients.",
       "Hired as a consultant after successfully completing a project during the final semester at RMIT, demonstrating expertise and dedication to delivering high-quality results."
+    ],
+    "tools": [
+      "GCP",
+      "RStudio",
+      "R Shiny",
+      "SQL"
     ]
   },
   {
@@ -141,6 +162,13 @@
       "Developed reports, dashboards and conducted data analysis to enable data-driven decisions, measure performance and identify trends across internal business areas.",
       "Conducted process mapping, audits, and implemented automation solutions for Sales & Operations Planning (S&OP) processes, resulting in improved efficiency and streamlined operations.",
       "Provided valuable insights through analysing historical sales and supply chain data, informing strategic decision-making and optimising business strategies."
+    ],
+    "tools": [
+      "MS Excel VBA Macros",
+      "Tableau",
+      "SQL Server",
+      "Salesforce",
+      "GSuite"
     ]
   },
   {
@@ -163,6 +191,10 @@
       "Oversaw internal operations and 3PL (Third-Party Logistics) providers, ensuring seamless supply chain operations and timely delivery.",
       "Provided assistance and support to internal stakeholders, addressing supply chain issues and maintaining smooth operations across distribution centers, warehouses and stores.",
       "Coordinated and optimised supply chain activities, liaising with 12 distribution centers, 2 manufacturing plants and 5 warehouses nationwide."
+    ],
+    "tools": [
+      "SAP",
+      "MS Excel VBA Macros"
     ]
   },
   {
@@ -181,6 +213,10 @@
       "Delivered regular progress reports to internal clients.",
       "Served as key liaison between HR Training & Development and 10+ regions worldwide.",
       "Provided critical reporting support to supervisors during budgeting periods."
+    ],
+    "tools": [
+      "MS Excel",
+      "MS Access"
     ]
   },
   {
@@ -200,7 +236,12 @@
       "commodity prices"
     ],
     "credential_url": "https://drive.google.com/file/d/1Bc_HxtC_7IQBWIgsYjTHXXhoYszRkuCY/view?usp=sharing",
-    "link": "https://fulcrum.shinyapps.io/commodityprices/"
+    "link": "https://fulcrum.shinyapps.io/commodityprices/",
+    "tools": [
+      "RStudio",
+      "SAS",
+      "Solver"
+    ]
   },
   {
     "id": "2009-utn-bachelor-industrial-engineering",
