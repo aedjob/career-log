@@ -252,7 +252,7 @@ function Section({ title, entries, collapsibleEntries, filters, yearFilter }) {
   const availableYears = useMemo(() => {
     if (!yearFilter) return [];
     const years = new Set(entries.map((e) => formatYear(e.date)));
-    return [...years].sort((a, b) => b - a);
+    return [...years].filter((y) => y >= 2019).sort((a, b) => b - a);
   }, [entries, yearFilter]);
 
   const filteredEntries = useMemo(() => {
