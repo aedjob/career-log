@@ -34,6 +34,10 @@ const CPD_FILTERS = {
     "BI",
     "data visualization",
     "analytics",
+    "SQL",
+    "SQL Server",
+    "database",
+    "BigQuery",
   ],
 };
 
