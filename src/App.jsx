@@ -121,7 +121,8 @@ function ThemeToggle({ theme, onToggle }) {
 function Entry({ e, collapsible }) {
   const t = useTheme();
   const [expanded, setExpanded] = useState(false);
-  const hasBody = Boolean(e.description) || (e.tags && e.tags.length > 0);
+  const hasBody =
+    Boolean(e.description) || (e.bullets && e.bullets.length > 0) || (e.tags && e.tags.length > 0);
   const showBody = !collapsible || expanded || !hasBody;
   const isExpandable = collapsible && hasBody;
 
@@ -222,6 +223,15 @@ function Entry({ e, collapsible }) {
       )}
       {showBody && e.description && (
         <p style={{ margin: "0 0 8px", fontSize: 14, color: t.textBody }}>{e.description}</p>
+      )}
+      {showBody && e.bullets && e.bullets.length > 0 && (
+        <ul style={{ margin: "0 0 8px", paddingLeft: 18, fontSize: 14, color: t.textBody }}>
+          {e.bullets.map((b, i) => (
+            <li key={i} style={{ marginBottom: 4 }}>
+              {b}
+            </li>
+          ))}
+        </ul>
       )}
       {showBody &&
         e.type !== "cpd" &&

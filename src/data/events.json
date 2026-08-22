@@ -10,7 +10,12 @@
     "role": null,
     "outcome": null,
     "description": "Delivered a client-facing Power BI audit, applying intermediate-to-advanced DAX measures and multi-table dashboards.",
-    "tags": ["Power BI", "DAX", "data analytics", "consulting"],
+    "tags": [
+      "Power BI",
+      "DAX",
+      "data analytics",
+      "consulting"
+    ],
     "link": null
   },
   {
@@ -21,9 +26,20 @@
     "title": "Operations Analyst",
     "org": "Chemist Warehouse",
     "location": "Melbourne/Perth AU",
-    "description": "Redesigned stock investigation processes and reporting systems, significantly improving efficiency in tracking damaged, expired and missing products across multiple distribution centers, reducing inventory discrepancies and streamlining follow-up procedures. Developed operational dashboards and reports used by planning, warehouse management and procurement teams for inventory optimisation, space utilisation and supplier performance analysis. Led the inbound process redesign at ePharmacy's main distribution center, creating and implementing SOPs for new workflows, conducting layout efficiency testing, and improving operational agility. Built a supplier performance analysis framework to measure and track quality metrics, enabling data-driven decisions on procurement and supplier relationships.",
-    "tags": ["Power BI", "process redesign", "SOPs", "supplier performance"],
-    "link": "https://www.linkedin.com/company/my-chemist-warehouse-group/about/"
+    "description": null,
+    "tags": [
+      "Power BI",
+      "process redesign",
+      "SOPs",
+      "supplier performance"
+    ],
+    "link": "https://www.linkedin.com/company/my-chemist-warehouse-group/about/",
+    "bullets": [
+      "Redesigned stock investigation processes and reporting systems, significantly improving efficiency in tracking damaged, expired and missing products across multiple distribution centers, reducing inventory discrepancies and streamlining follow-up procedures.",
+      "Developed operational dashboards and reports used by planning, warehouse management and procurement teams for inventory optimisation, space utilisation and supplier performance analysis.",
+      "Led the inbound process redesign at ePharmacy's main distribution center, creating and implementing SOPs for new workflows, conducting layout efficiency testing, and improving operational agility.",
+      "Built a supplier performance analysis framework to measure and track quality metrics, enabling data-driven decisions on procurement and supplier relationships."
+    ]
   },
   {
     "id": "2020-freelance-data-consultant",
@@ -34,7 +50,10 @@
     "org": "Freelance",
     "location": "Remote",
     "description": "Provided remote data analytics support to clients during the Covid-19 outbreak, leveraging expertise in data analysis and problem-solving to deliver successful outcomes.",
-    "tags": ["freelance", "data analytics"]
+    "tags": [
+      "freelance",
+      "data analytics"
+    ]
   },
   {
     "id": "2019-myer-business-analyst",
@@ -44,9 +63,20 @@
     "title": "Business Analyst",
     "org": "Myer",
     "location": "Melbourne AU",
-    "description": "Conducted stakeholder engagement and requirements gathering to identify opportunities for improvement within the Digital team, resulting in enhanced processes and strategies. Designed, developed and maintained metrics and reports that provided valuable insights for driving key business decisions. Led process mapping initiatives and utilised Agile methodologies to ensure the successful execution of projects, resulting in improved efficiency and alignment with business objectives. Conducted comprehensive research and analysis, including e-commerce analytics, A/B testing and UX analysis, collaborating with a multidisciplinary team to deliver and prioritize the Digital team's backlog and enhance website performance and user experience.",
-    "tags": ["Agile", "e-commerce analytics", "A/B testing", "UX"],
-    "link": "https://www.linkedin.com/company/myer/about/"
+    "description": null,
+    "tags": [
+      "Agile",
+      "e-commerce analytics",
+      "A/B testing",
+      "UX"
+    ],
+    "link": "https://www.linkedin.com/company/myer/about/",
+    "bullets": [
+      "Conducted stakeholder engagement and requirements gathering to identify opportunities for improvement within the Digital team, resulting in enhanced processes and strategies.",
+      "Designed, developed and maintained metrics and reports that provided valuable insights for driving key business decisions.",
+      "Led process mapping initiatives and utilised Agile methodologies to ensure the successful execution of projects, resulting in improved efficiency and alignment with business objectives.",
+      "Conducted comprehensive research and analysis, including e-commerce analytics, A/B testing and UX analysis, collaborating with a multidisciplinary team to deliver and prioritize the Digital team's backlog and enhance website performance and user experience."
+    ]
   },
   {
     "id": "2019-fulcrum-data-consultant",
@@ -56,9 +86,17 @@
     "title": "Data Consultant",
     "org": "Fulcrum Procurement",
     "location": "Melbourne AU",
-    "description": "Supported procurement processes through data validation and report generation, ensuring accuracy and reliability in decision-making. Optimised consulting services by leveraging data-driven insights, resulting in improved procurement strategies and outcomes for clients. Hired as a consultant after successfully completing a project during the final semester at RMIT, demonstrating expertise and dedication to delivering high-quality results.",
-    "tags": ["procurement", "data validation"],
-    "link": "https://www.linkedin.com/company/fulcrum-procurement/about/"
+    "description": null,
+    "tags": [
+      "procurement",
+      "data validation"
+    ],
+    "link": "https://www.linkedin.com/company/fulcrum-procurement/about/",
+    "bullets": [
+      "Supported procurement processes through data validation and report generation, ensuring accuracy and reliability in decision-making.",
+      "Optimised consulting services by leveraging data-driven insights, resulting in improved procurement strategies and outcomes for clients.",
+      "Hired as a consultant after successfully completing a project during the final semester at RMIT, demonstrating expertise and dedication to delivering high-quality results."
+    ]
   },
   {
     "id": "2017-rmit-masters-gap",
@@ -92,9 +130,18 @@
     "title": "Business Intelligence Analyst",
     "org": "Groupon",
     "location": "Buenos Aires AR",
-    "description": "Developed reports, dashboards and conducted data analysis to enable data-driven decisions, measure performance and identify trends across internal business areas. Conducted process mapping, audits, and implemented automation solutions for Sales & Operations Planning (S&OP) processes, resulting in improved efficiency and streamlined operations. Provided valuable insights through analysing historical sales and supply chain data, informing strategic decision-making and optimising business strategies.",
-    "tags": ["BI", "S&OP", "automation"],
-    "link": "https://www.linkedin.com/company/groupon/about/"
+    "description": null,
+    "tags": [
+      "BI",
+      "S&OP",
+      "automation"
+    ],
+    "link": "https://www.linkedin.com/company/groupon/about/",
+    "bullets": [
+      "Developed reports, dashboards and conducted data analysis to enable data-driven decisions, measure performance and identify trends across internal business areas.",
+      "Conducted process mapping, audits, and implemented automation solutions for Sales & Operations Planning (S&OP) processes, resulting in improved efficiency and streamlined operations.",
+      "Provided valuable insights through analysing historical sales and supply chain data, informing strategic decision-making and optimising business strategies."
+    ]
   },
   {
     "id": "2013-abinbev-supply-chain-analyst",
@@ -104,9 +151,19 @@
     "title": "Supply Chain Analyst",
     "org": "Anheuser-Busch InBev",
     "location": "Buenos Aires AR",
-    "description": "Managed end-to-end supply planning, optimising distribution from manufacturing plants to distribution centers for efficient fulfillment. Oversaw internal operations and 3PL (Third-Party Logistics) providers, ensuring seamless supply chain operations and timely delivery. Provided assistance and support to internal stakeholders, addressing supply chain issues and maintaining smooth operations across distribution centers, warehouses and stores. Coordinated and optimised supply chain activities, liaising with 12 distribution centers, 2 manufacturing plants and 5 warehouses nationwide.",
-    "tags": ["supply planning", "3PL", "distribution"],
-    "link": "https://www.linkedin.com/company/ab-inbev/about/"
+    "description": null,
+    "tags": [
+      "supply planning",
+      "3PL",
+      "distribution"
+    ],
+    "link": "https://www.linkedin.com/company/ab-inbev/about/",
+    "bullets": [
+      "Managed end-to-end supply planning, optimising distribution from manufacturing plants to distribution centers for efficient fulfillment.",
+      "Oversaw internal operations and 3PL (Third-Party Logistics) providers, ensuring seamless supply chain operations and timely delivery.",
+      "Provided assistance and support to internal stakeholders, addressing supply chain issues and maintaining smooth operations across distribution centers, warehouses and stores.",
+      "Coordinated and optimised supply chain activities, liaising with 12 distribution centers, 2 manufacturing plants and 5 warehouses nationwide."
+    ]
   },
   {
     "id": "2011-tenaris-training-assistant",
@@ -116,9 +173,15 @@
     "title": "Training Assistant",
     "org": "Tenaris",
     "location": "Buenos Aires AR",
-    "description": "Owned end-to-end monitoring of internal employees' training performance, delivered regular progress reports to internal clients, served as key liaison between HR Training & Development and 10+ regions worldwide, and provided critical reporting support to supervisors during budgeting periods.",
+    "description": null,
     "tags": [],
-    "link": "https://www.linkedin.com/company/tenaris/about/"
+    "link": "https://www.linkedin.com/company/tenaris/about/",
+    "bullets": [
+      "Owned end-to-end monitoring of internal employees' training performance.",
+      "Delivered regular progress reports to internal clients.",
+      "Served as key liaison between HR Training & Development and 10+ regions worldwide.",
+      "Provided critical reporting support to supervisors during budgeting periods."
+    ]
   },
   {
     "id": "2017-rmit-masters-statistics",
@@ -129,7 +192,13 @@
     "org": "RMIT University",
     "location": "Melbourne AU",
     "description": "Graduated with a GPA of 3.0 (Distinction). Completed an Applied Research Project — \"Harnessing Open Data Sources\" — scoring 89/100, under Course Coordinator Dr Yan Wang and industry partner Fulcrum Procurement Australia: identified and extracted key commodity prices in the food manufacturing industry from reliable sources, assessed commodity price and index fluctuations, and built a dashboard that automatically sources relevant time series data and reflects it on the client's website. Played for the RMIT Futsal Team.",
-    "tags": ["R", "Shiny", "data visualization", "open data", "commodity prices"],
+    "tags": [
+      "R",
+      "Shiny",
+      "data visualization",
+      "open data",
+      "commodity prices"
+    ],
     "credential_url": "https://drive.google.com/file/d/1Bc_HxtC_7IQBWIgsYjTHXXhoYszRkuCY/view?usp=sharing",
     "link": "https://fulcrum.shinyapps.io/commodityprices/"
   },
@@ -168,7 +237,11 @@
     "speakers": null,
     "duration_hours": 6,
     "description": "Attended talks as part of the event's conference program, and held conversations with several suppliers in the logistics and supply chain industry to understand the latest technology and solutions on the market.",
-    "tags": ["logistics", "supply chain", "trade show"],
+    "tags": [
+      "logistics",
+      "supply chain",
+      "trade show"
+    ],
     "credential_url": null,
     "link": "https://www.expologisti-k.com.ar/"
   },
@@ -184,7 +257,12 @@
     "speakers": "Nicolás Arceo (Director, Economía y Energía)",
     "duration_hours": 1,
     "description": "Talk on the recent evolution of Argentina's fuel market, held as part of Expo Transporte's conference program.",
-    "tags": ["energy", "fuel market", "economics", "Argentina"],
+    "tags": [
+      "energy",
+      "fuel market",
+      "economics",
+      "Argentina"
+    ],
     "credential_url": null,
     "link": null
   },
@@ -200,7 +278,12 @@
     "speakers": "PhD. Ing. Roberto A. Bunge (UdeSA — Director, Ing. en Inteligencia Artificial / Director, Depto. de Ingeniería); Ing. Javier Mascheroni (PAE — Gerente Ejecutivo, Gestión de Activos)",
     "duration_hours": 2,
     "description": "Seminar on how robotics is driving innovation and transformation in industry.",
-    "tags": ["robotics", "industry", "innovation", "energy"],
+    "tags": [
+      "robotics",
+      "industry",
+      "innovation",
+      "energy"
+    ],
     "credential_url": null,
     "link": "https://www.youtube.com/watch?v=HbgLEkUGH9Y"
   },
@@ -216,7 +299,12 @@
     "speakers": "Varun Chadha (Associate VP ANZ, FarEye); Steven Ballerini (CEO, ASCLA); Andrew McKenna (Managing Director, McKenna Worldwide / Quantium Solutions Australia)",
     "duration_hours": 1,
     "description": "Executive discussion on how AI, agility and customer-centric strategies are shaping last-mile delivery performance and competitive advantage.",
-    "tags": ["supply chain", "logistics", "last mile", "AI"],
+    "tags": [
+      "supply chain",
+      "logistics",
+      "last mile",
+      "AI"
+    ],
     "credential_url": null,
     "link": "https://info.sclaa.com.au/event-6761711"
   },
@@ -232,7 +320,12 @@
     "speakers": "Mark Everingham (Founder, Personal Risk Professionals); Richard Hopwood (PPS Mutual)",
     "duration_hours": 1.5,
     "description": "Webinar on financial planning and personal insurance for engineers — income protection, TPD, life and trauma cover, how policy structure (inside vs. outside super) affects tax and claims, and the risks of relying on default super cover.",
-    "tags": ["financial planning", "insurance", "risk management", "career"],
+    "tags": [
+      "financial planning",
+      "insurance",
+      "risk management",
+      "career"
+    ],
     "credential_url": null,
     "link": "https://www.youtube.com/watch?v=IjRTJEVm2vI"
   },
@@ -248,7 +341,12 @@
     "speakers": "G. Spurring (Nexon Asia Pacific); Ali Ramti (Bright Food)",
     "duration_hours": 1.5,
     "description": "Webinar on modern network and security strategy — SD-WAN, SASE and AI-driven threat detection, with a case study on Bright Food's phased network transformation (security hardening, redesign for distributed work, then SD-WAN/SSE rollout for remote and OT environments).",
-    "tags": ["networking", "cybersecurity", "SD-WAN", "cloud"],
+    "tags": [
+      "networking",
+      "cybersecurity",
+      "SD-WAN",
+      "cloud"
+    ],
     "credential_url": null,
     "link": "https://www.youtube.com/watch?v=jM35_Qrt3RI"
   },
@@ -264,7 +362,12 @@
     "speakers": null,
     "duration_hours": 1.5,
     "description": "Webinar on data-driven energy management — EMS architecture (metering, communication, software), Australian regulatory standards (NCC, NABERS, Green Star), a seven-pillar framework for energy data strategy, and typical ROI/payback for energy management investment (10–30% savings, 1–3 year payback).",
-    "tags": ["energy management", "data analytics", "sustainability", "compliance"],
+    "tags": [
+      "energy management",
+      "data analytics",
+      "sustainability",
+      "compliance"
+    ],
     "credential_url": null,
     "link": "https://www.youtube.com/watch?v=BQ34cxp4Sbc"
   },
@@ -280,7 +383,12 @@
     "speakers": "Jahan Kay (Learning Designer, Engineering Education Australia)",
     "duration_hours": 1,
     "description": "Session on negotiation as a tool for early-career engineers — defining negotiation, understanding power dynamics, different communication styles, and building win-win outcomes through shared interests.",
-    "tags": ["negotiation", "communication", "early career", "soft skills"],
+    "tags": [
+      "negotiation",
+      "communication",
+      "early career",
+      "soft skills"
+    ],
     "credential_url": null,
     "link": "https://portal.engineersaustralia.org.au/event/2024/09/early-career-cpd%3A-strengthening-negotiation-skills-to-create-win-win-solutions-55286"
   },
@@ -296,7 +404,11 @@
     "speakers": null,
     "duration_hours": 1.25,
     "description": "First of a three-part networking series connecting industry leaders with early-career engineers, focused on mentorship and professional connection within the engineering community.",
-    "tags": ["networking", "mentorship", "early career"],
+    "tags": [
+      "networking",
+      "mentorship",
+      "early career"
+    ],
     "credential_url": null,
     "link": null
   },
@@ -312,7 +424,12 @@
     "speakers": "Rita Arrigo (Strategic Engagement Manager, National AI Centre); Dr Sarah Dods (Advanced Analytics and AI Leader, GHD Digital); Cate Trotter (Senior Manager, Human Centred Design, GHD Digital)",
     "duration_hours": 1.5,
     "description": "Panel on AI adoption for engineers — the six pillars of AI readiness (based on ISO 42001), translating AI strategy into practice while managing risk, and the human/cultural factors driving successful technology integration.",
-    "tags": ["AI", "strategy", "change management", "ISO 42001"],
+    "tags": [
+      "AI",
+      "strategy",
+      "change management",
+      "ISO 42001"
+    ],
     "credential_url": null,
     "link": "https://www.youtube.com/watch?v=uQ-e_npXkZo"
   },
@@ -328,7 +445,12 @@
     "speakers": "Professor Eduard Hovy (Executive Director, Melbourne Connect); Jenny Mitchell (General Manager, Policy and Advocacy, Engineers Australia)",
     "duration_hours": 1.5,
     "description": "Introductory session on Generative AI and LLMs for engineers — foundational concepts, current capabilities and limitations, ethical/security/regulatory considerations, and findings from an EA report on how GenAI is transforming the engineering profession and workforce.",
-    "tags": ["AI", "GenAI", "LLMs", "engineering practice"],
+    "tags": [
+      "AI",
+      "GenAI",
+      "LLMs",
+      "engineering practice"
+    ],
     "credential_url": null,
     "link": "https://portal.engineersaustralia.org.au/event/2024/10/fundamentals-of-generative-ai-%28genai%29-for-engineers-55761"
   },
@@ -344,7 +466,12 @@
     "speakers": "Volker Richter (BMW Group); A/Prof David Holmes (QUT)",
     "duration_hours": 1.5,
     "description": "Webinar on BMW's 'Lean, Green, Digital' iFactory vision — how sustainability and digitisation in advanced manufacturing are extending Lean principles under Industry 4.0, and their role as a foundation for emerging Industry 5.0 concepts.",
-    "tags": ["Industry 4.0", "manufacturing", "sustainability", "digitisation"],
+    "tags": [
+      "Industry 4.0",
+      "manufacturing",
+      "sustainability",
+      "digitisation"
+    ],
     "credential_url": null,
     "link": "https://portal.engineersaustralia.org.au/event/2023/10/thought-leaders-series%3A-industry-4.0-and-beyond-in-advanced-manufacturing-51551"
   },
@@ -360,7 +487,12 @@
     "speakers": "Chris Amos (Technical Director, Sustainability & Climate Change, Aurecon Australasia)",
     "duration_hours": 0.25,
     "description": "Presentation on offshore wind development in Australia, drawing on the presenter's experience with a Gippsland offshore wind feasibility licence application — development/construction tasks, supply chain, ports, grid connection, and workforce challenges, plus a comparison with onshore wind.",
-    "tags": ["offshore wind", "renewable energy", "grid connection", "Australia"],
+    "tags": [
+      "offshore wind",
+      "renewable energy",
+      "grid connection",
+      "Australia"
+    ],
     "credential_url": null,
     "link": "https://eaondemand.engineersaustralia.org.au/Play?pId=0a40c1e7-181b-48ee-9a18-bea7a76fb1af"
   },
@@ -376,7 +508,12 @@
     "speakers": "Deanna Hood (Senior Robotics Engineer, Inventia Life Science; Young Professional Engineer of the Year)",
     "duration_hours": 0.25,
     "description": "Presentation on applying electrical/software engineering to life sciences — Deanna Hood's work on Inventia's Ligō skin-printing robot, IEC 60601-1 compliance strategies for medical robotics, and her broader career journey across bioprinting, burns treatment, and assistive robotics.",
-    "tags": ["bioprinting", "medical robotics", "life sciences", "career"],
+    "tags": [
+      "bioprinting",
+      "medical robotics",
+      "life sciences",
+      "career"
+    ],
     "credential_url": null,
     "link": "https://portal.engineersaustralia.org.au/event/2022/09/3d-bioprinting-regenerative-medicine-45426"
   },
@@ -392,7 +529,12 @@
     "speakers": "Jane MacMaster (Chief Engineer, Engineers Australia); Kristy Eulenstein (Head of Policy and Government Relations, Consult Australia); Tom Lunn (Senior Policy Manager, Insurance Council of Australia)",
     "duration_hours": 1,
     "description": "Webinar launching EA's Risk Management Guide — how insurers assess engineers' risk, how 'risk' is perceived differently by engineers versus insurers, and practical ways to manage risk through contracts to improve Professional Indemnity Insurance outcomes.",
-    "tags": ["risk management", "insurance", "professional indemnity", "contracts"],
+    "tags": [
+      "risk management",
+      "insurance",
+      "professional indemnity",
+      "contracts"
+    ],
     "credential_url": null,
     "link": "https://portal.engineersaustralia.org.au/event/2023/05/risk-mitigation-and-management-fundamentals-risk-management-48681"
   },
@@ -408,7 +550,11 @@
     "speakers": null,
     "duration_hours": 2,
     "description": "Networking session on career progression for engineers — developing skills for current and future roles, industry involvement, and qualifications/recognitions that support advancement, with a focus on supporting migrant engineers entering the workforce.",
-    "tags": ["networking", "career progression", "professional development"],
+    "tags": [
+      "networking",
+      "career progression",
+      "professional development"
+    ],
     "credential_url": null,
     "link": "https://portal.engineersaustralia.org.au/event/2023/09/global-engineering-talent-networking-series%3A-planning-for-career-progression-51061"
   },
@@ -424,7 +570,15 @@
     "speakers": null,
     "duration_hours": 9,
     "description": "Course on advanced BigQuery — SQL functions beyond the basics, how BigQuery's architecture addresses the scaling limits of traditional databases, query performance optimization, and permission-control/data-sharing tools within Google Cloud.",
-    "tags": ["BigQuery", "SQL", "data analytics", "cloud", "performance tuning", "data security", "Google Cloud Platform"],
+    "tags": [
+      "BigQuery",
+      "SQL",
+      "data analytics",
+      "cloud",
+      "performance tuning",
+      "data security",
+      "Google Cloud Platform"
+    ],
     "credential_url": "https://coursera.org/share/f90ee0b1fd2bc252cc4f3a2e6c834e2d",
     "link": "https://www.coursera.org/learn/gcp-advanced-insights-bigquery"
   },
@@ -440,7 +594,13 @@
     "speakers": null,
     "duration_hours": 8,
     "description": "Second course in Google Cloud's 'From Data to Insights' specialization — creating permanent/temporary tables from query results, loading and creating new BigQuery datasets, SQL JOINs vs. UNIONs across multiple data sources, and building dashboards/visualizations in Google Data Studio.",
-    "tags": ["BigQuery", "SQL", "data visualization", "Google Data Studio", "Google Cloud Platform"],
+    "tags": [
+      "BigQuery",
+      "SQL",
+      "data visualization",
+      "Google Data Studio",
+      "Google Cloud Platform"
+    ],
     "credential_url": "https://coursera.org/share/0ff09d6f756bcab1855aa61f829fef62",
     "link": "https://www.coursera.org/learn/gcp-creating-bigquery-datasets-visualizing-insights"
   },
@@ -456,7 +616,13 @@
     "speakers": null,
     "duration_hours": 8,
     "description": "First course in Google Cloud's 'From Data to Insights' specialization — core big data tools on Google Cloud, querying with SQL basics in BigQuery, understanding BigQuery pricing/query optimization, and building an automated data cleansing pipeline, including hands-on work with a real Google Analytics e-commerce dataset.",
-    "tags": ["BigQuery", "SQL", "data analytics", "cloud", "Google Cloud Platform"],
+    "tags": [
+      "BigQuery",
+      "SQL",
+      "data analytics",
+      "cloud",
+      "Google Cloud Platform"
+    ],
     "credential_url": "https://coursera.org/share/f59b0906883a259194575b84f6968bd8",
     "link": "https://www.coursera.org/learn/gcp-exploring-preparing-data-bigquery"
   },
@@ -472,7 +638,10 @@
     "speakers": "Antony Ugoni (Global Matching and Analytics Director, SEEK)",
     "duration_hours": 1,
     "description": "Annual Belz Lecture on the importance of staying grounded in core statistics as data science applications advance — ANOVA, randomness, the Central Limit Theorem, and hypothesis testing as foundational concepts underpinning the field.",
-    "tags": ["statistics", "data science"],
+    "tags": [
+      "statistics",
+      "data science"
+    ],
     "credential_url": null,
     "link": "https://www.linkedin.com/posts/activity-6595654584243499008-gycb?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAxpj6MB_EB-Bmut-NSdjukqPEnvQoNkffw"
   },
@@ -488,7 +657,12 @@
     "speakers": null,
     "duration_hours": 20,
     "description": "Two-day hackathon bringing together students and hobbyists across disciplines to reinvent how we learn using Microsoft's HoloLens and Windows Mixed Reality.",
-    "tags": ["mixed reality", "hackathon", "HoloLens", "innovation"],
+    "tags": [
+      "mixed reality",
+      "hackathon",
+      "HoloLens",
+      "innovation"
+    ],
     "credential_url": null,
     "link": "https://www.linkedin.com/posts/activity-6595182583628345344-KtB-?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAxpj6MB_EB-Bmut-NSdjukqPEnvQoNkffw"
   },
@@ -504,7 +678,12 @@
     "speakers": "Veli Fikret (Australian Taxation Office); Ying Yang (Senior Director, Data Science, Australian Taxation Office)",
     "duration_hours": 2,
     "description": "Talk by the Australian Taxation Office on the innovative data-handling techniques required to manage its massive, sensitive datasets, and the ethical and responsible-use boundaries that come with it. Included a masterclass on ATO's data processes and a datathon Q&A.",
-    "tags": ["data analytics", "government", "ethics", "data science"],
+    "tags": [
+      "data analytics",
+      "government",
+      "ethics",
+      "data science"
+    ],
     "credential_url": null,
     "link": "https://www.linkedin.com/posts/activity-6592029787227856896-9B9o?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAxpj6MB_EB-Bmut-NSdjukqPEnvQoNkffw"
   },
@@ -520,7 +699,12 @@
     "speakers": "Steven Brown",
     "duration_hours": 1.15,
     "description": "Course on Lean principles applied to inventory management — eliminating waste, reducing costs and improving quality; tools like 5S and Kanban; standardizing parts and quality-at-source tactics; and strategies for managing supplier inventories, controlling inventory buffers, and building a lean culture for continuous improvement.",
-    "tags": ["Lean", "inventory management", "supply chain", "process improvement"],
+    "tags": [
+      "Lean",
+      "inventory management",
+      "supply chain",
+      "process improvement"
+    ],
     "credential_url": "https://www.linkedin.com/learning/certificates/1e4aed46163352765b4bceb1766396c4db685409aee8b09f191edbfed493cf2b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BqKhW%2Bm%2FYRwmYvagvSdk8kg%3D%3D",
     "link": null
   },
@@ -536,7 +720,11 @@
     "speakers": "Kendra Vant (EGM Data, Xero); Jade Haar (Head of Data Ethics, NAB); Catherine Lopes (Head of Enterprise Data and Analytics, AGL); Dr Robbie Fordyce (Lecturer, Communications and Media Studies, Monash University); Chetan Ganjihal (AI Architect, Deloitte)",
     "duration_hours": 2,
     "description": "Panel discussion on the ethics of artificial intelligence, followed by audience Q&A, hosted as part of the #DisruptorsInTech Melbourne tech community series.",
-    "tags": ["AI", "ethics", "technology"],
+    "tags": [
+      "AI",
+      "ethics",
+      "technology"
+    ],
     "credential_url": null,
     "link": "https://www.eventbrite.com.au/e/ethics-of-artificial-intelligence-disruptorsintech-melbourne-tickets-73077277103"
   },
@@ -552,7 +740,11 @@
     "speakers": "Michael Berry",
     "duration_hours": 2,
     "description": "Talk on Power BI's evolution and recent feature updates, including logistic regression models for categorical analysis. Co-sponsored by Sirius Recruitment.",
-    "tags": ["Power BI", "data visualization", "BI"],
+    "tags": [
+      "Power BI",
+      "data visualization",
+      "BI"
+    ],
     "credential_url": null,
     "link": "https://www.linkedin.com/posts/activity-6587876376026710016-qKvA?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAxpj6MB_EB-Bmut-NSdjukqPEnvQoNkffw"
   },
@@ -568,7 +760,12 @@
     "speakers": "Dr. Richard Chua (Certified Lean Six Sigma Master Black Belt trainer)",
     "duration_hours": 1.35,
     "description": "Course on fundamental Lean Six Sigma tools for the Analyze, Improve and Control phases of DMAIC — cause-effect diagrams, multi-voting, scatter plots, correlation and regression for analysis; FMEA and Kaizen for process improvement; hypothesis testing, data collection planning, and implementing process controls and value-stream management. Qualifies for 1.25 PMI PDUs.",
-    "tags": ["Lean Six Sigma", "DMAIC", "process improvement", "quality management"],
+    "tags": [
+      "Lean Six Sigma",
+      "DMAIC",
+      "process improvement",
+      "quality management"
+    ],
     "credential_url": "https://www.linkedin.com/learning/certificates/4ff786b21bcc0bc47652482d9be14bd1ada2e3e5bb01557bb11060cb81e930af?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bmz2HAYXkQ66uJ%2BdvF9su4w%3D%3D",
     "link": "https://www.linkedin.com/learning/lean-six-sigma-analyze-improve-and-control-tools"
   },
@@ -584,7 +781,12 @@
     "speakers": "Dr. Richard Chua (Certified Lean Six Sigma Master Black Belt trainer)",
     "duration_hours": 1.4,
     "description": "Companion course to Analyze, Improve and Control Tools, covering the Define and Measure phases of DMAIC — the project charter, process mapping (including swimlane maps), Pareto charts for identifying problem areas, Critical-to-Quality (CTQ) requirements, repeatability, process variation, and process capability (Cp).",
-    "tags": ["Lean Six Sigma", "DMAIC", "process improvement", "quality management"],
+    "tags": [
+      "Lean Six Sigma",
+      "DMAIC",
+      "process improvement",
+      "quality management"
+    ],
     "credential_url": "https://www.linkedin.com/learning/certificates/64ef5f4ee475931dbb567ce63b58b5d4984cd017da6ddb0c1772bf46ea503ae2?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bmz2HAYXkQ66uJ%2BdvF9su4w%3D%3D",
     "link": "https://www.linkedin.com/learning/lean-six-sigma-define-and-measure-tools"
   },
@@ -600,7 +802,12 @@
     "speakers": "Dr. Richard Chua (Certified Lean Six Sigma Master Black Belt trainer)",
     "duration_hours": 1.8,
     "description": "Foundational course on Six Sigma as a customer-focused, data-driven improvement approach — Critical-to-Quality (CTQ) requirements, variation, defects per million opportunities (DPMO), Six Sigma roles and belts, project selection criteria, and a full walkthrough of the DMAIC phases (Define, Measure, Analyze, Improve, Control). Qualifies for 1.75 PMI PDUs.",
-    "tags": ["Six Sigma", "DMAIC", "process improvement", "quality management"],
+    "tags": [
+      "Six Sigma",
+      "DMAIC",
+      "process improvement",
+      "quality management"
+    ],
     "credential_url": "https://www.linkedin.com/learning/certificates/04553f55a8599c19d2857bd6a84a56e7b083c90f9a62fca3f605db457c2197ab?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bmz2HAYXkQ66uJ%2BdvF9su4w%3D%3D",
     "link": "https://www.linkedin.com/learning/six-sigma-foundations"
   },
@@ -616,7 +823,11 @@
     "speakers": "Doug Rose",
     "duration_hours": 1,
     "description": "Course on running effective agile team meetings — standups, sprint planning, retrospectives and other agile ceremonies, and how to keep them focused and valuable rather than a time drain.",
-    "tags": ["Agile", "meetings", "leadership"],
+    "tags": [
+      "Agile",
+      "meetings",
+      "leadership"
+    ],
     "credential_url": "https://www.linkedin.com/learning/certificates/b4bb9aed36f3e1cd9682cd77363157f5046edcedcd11070dfb2482bb3256e780?trk=backfilled_certificate&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BEmJo1EgDS8yefZ%2F%2Bf8PmlA%3D%3D",
     "link": null
   },
@@ -632,7 +843,11 @@
     "speakers": "Doug Rose",
     "duration_hours": 0.9,
     "description": "Course on assembling and structuring an effective agile team — roles, responsibilities, and team dynamics within an agile working environment.",
-    "tags": ["Agile", "team building", "leadership"],
+    "tags": [
+      "Agile",
+      "team building",
+      "leadership"
+    ],
     "credential_url": "https://www.linkedin.com/learning/certificates/b104092dea66f3471cb21ad06c3e8ee09a3e8424dc1e8a094fcfa184d5eaf4ef?trk=backfilled_certificate&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BEmJo1EgDS8yefZ%2F%2Bf8PmlA%3D%3D",
     "link": null
   },
@@ -648,7 +863,11 @@
     "speakers": "Doug Rose",
     "duration_hours": 0.85,
     "description": "Course on writing and using agile user stories for requirements and planning — how a backlog of stories is created, sized, prioritized, and used in sprint/iteration planning.",
-    "tags": ["Agile", "user stories", "project management"],
+    "tags": [
+      "Agile",
+      "user stories",
+      "project management"
+    ],
     "credential_url": "https://www.linkedin.com/learning/certificates/9e831d988e0fdabb2c057ef6150843bbf4e0042e60e83db937652c1547830d9d?trk=backfilled_certificate&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BEmJo1EgDS8yefZ%2F%2Bf8PmlA%3D%3D",
     "link": null
   },
@@ -664,7 +883,10 @@
     "speakers": null,
     "duration_hours": null,
     "description": "Achieved an overall band score of 8/9 on the IELTS Academic Training test. Credential ID 16AU005339JOBA165A.",
-    "tags": ["English proficiency", "language certification"],
+    "tags": [
+      "English proficiency",
+      "language certification"
+    ],
     "credential_url": null,
     "link": null
   },
@@ -680,7 +902,10 @@
     "speakers": null,
     "duration_hours": 48,
     "description": "Completed Level I of the basic cycle of Portuguese language studies, over 4 months at 3 hours per week. Grade: 74/100.",
-    "tags": ["Portuguese", "language"],
+    "tags": [
+      "Portuguese",
+      "language"
+    ],
     "credential_url": "https://drive.google.com/file/d/1CbKpgidCP7I4w3AFAxr-RQP4yXEO5L8_/view?usp=sharing",
     "link": null
   },
@@ -696,7 +921,10 @@
     "speakers": null,
     "duration_hours": 48,
     "description": "Completed Level II of the basic cycle of Portuguese language studies, over 4 months at 3 hours per week. Grade: 95/100.",
-    "tags": ["Portuguese", "language"],
+    "tags": [
+      "Portuguese",
+      "language"
+    ],
     "credential_url": "https://drive.google.com/file/d/152nhscocDpUAKUr8sIjRFXZKTfcRvzEm/view?usp=sharing",
     "link": null
   },
@@ -712,7 +940,10 @@
     "speakers": null,
     "duration_hours": null,
     "description": "Overall score: 85. Listening 90, Reading 84, Speaking 87, Writing 88.",
-    "tags": ["English proficiency", "language certification"],
+    "tags": [
+      "English proficiency",
+      "language certification"
+    ],
     "credential_url": null,
     "link": null
   },
@@ -728,7 +959,11 @@
     "speakers": null,
     "duration_hours": 21,
     "description": "Course on SQL Server 2012 programming.",
-    "tags": ["SQL", "SQL Server", "database"],
+    "tags": [
+      "SQL",
+      "SQL Server",
+      "database"
+    ],
     "credential_url": "https://drive.google.com/file/d/1FF67_5v-IkfgK7ncfJVnRL5cN-gnh5eb/view?usp=sharing",
     "link": null
   },
@@ -744,7 +979,11 @@
     "speakers": "Michelle Fitzgerald (Chief Digital Officer, City of Melbourne); Michael Nolan (Chair, UN Global Compact Cities Programme); Madeline Wilson (Victoria State Manager, OzHarvest); Alex Lazarus Priestley (Leadership Development Manager, Inspire Group); Donna Stolzenberg (Founder, Melbourne Homeless Collective)",
     "duration_hours": 34,
     "description": "Four-day intensive leadership development programme building cultural intelligence and cross-boundary leadership capability, run by Common Purpose in partnership with RMIT University. Included engagement with leaders across government, corporate, not-for-profit and social enterprise sectors. Completion earned RMIT digital badge credentials and membership in Common Purpose's global alumni network.",
-    "tags": ["leadership", "cultural intelligence", "professional development"],
+    "tags": [
+      "leadership",
+      "cultural intelligence",
+      "professional development"
+    ],
     "credential_url": null,
     "link": "https://www.youtube.com/watch?v=6EF6iyZnimk"
   },
@@ -760,7 +999,11 @@
     "speakers": "Emma-May Litchfield (Co-founder and Director, Resolution Resources)",
     "duration_hours": 4,
     "description": "Intensive negotiation workshop covering the difference between strategy and tactics in communication, principles of interest-based negotiation, and developing an authentic negotiating voice.",
-    "tags": ["negotiation", "communication", "workshop"],
+    "tags": [
+      "negotiation",
+      "communication",
+      "workshop"
+    ],
     "credential_url": null,
     "link": "https://www.eventbrite.com.au/e/activator-skill-up-workshop-the-art-of-negotiation-tickets-49076399833"
   },
@@ -776,7 +1019,11 @@
     "speakers": null,
     "duration_hours": 3.5,
     "description": "Workshop on creative thinking and idea development — generating creative ideas and new perspectives, experimenting with creative thinking techniques, and building a problem-solver mindset.",
-    "tags": ["creative thinking", "problem solving", "workshop"],
+    "tags": [
+      "creative thinking",
+      "problem solving",
+      "workshop"
+    ],
     "credential_url": null,
     "link": "https://www.eventbrite.com.au/e/activator-skill-up-workshop-develop-an-idea-tickets-51049466328"
   }
