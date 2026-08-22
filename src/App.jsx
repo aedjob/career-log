@@ -1,5 +1,37 @@
-import { useMemo, useState } from "react";
+import { useMemo, useState, createContext, useContext } from "react";
 import EVENTS from "./data/events.json";
+
+const THEMES = {
+  dark: {
+    bg: "#262624",
+    textDefault: "#E8E6DC",
+    textPrimary: "#F5F4F0",
+    textBody: "#C4C1B8",
+    textMuted: "#8A8779",
+    textSubtle: "#6B6A63",
+    border: "#45433E",
+    borderIcon: "#55534E",
+    accent: "#2aeccf",
+    hoverBg: "#2E2D2A",
+  },
+  light: {
+    bg: "#FFFFFF",
+    textDefault: "#1A1A1A",
+    textPrimary: "#111111",
+    textBody: "#404040",
+    textMuted: "#6B6B6B",
+    textSubtle: "#8A8A8A",
+    border: "#DDDDDD",
+    borderIcon: "#9E9E9E",
+    accent: "#000000",
+    hoverBg: "#F2F2F0",
+  },
+};
+
+const ThemeContext = createContext(THEMES.dark);
+function useTheme() {
+  return useContext(ThemeContext);
+}
 
 const CPD_FILTERS = {
   "AI & Technology": [
@@ -66,7 +98,36 @@ function formatCpdRange(start, end) {
   return startLabel === endLabel ? startLabel : `${startLabel} – ${endLabel}`;
 }
 
+function ThemeToggle({ theme, onToggle }) {
+  const t = useTheme();
+  return (
+    <div style={{ display: "flex", gap: 6 }}>
+      {["dark", "light"].map((mode) => (
+        <button
+          key={mode}
+          onClick={() => onToggle(mode)}
+          className="mono"
+          style={{
+            fontSize: 10,
+            letterSpacing: "0.06em",
+            textTransform: "uppercase",
+            padding: "4px 8px",
+            border: "1px solid",
+            borderColor: theme === mode ? t.accent : t.border,
+            background: theme === mode ? t.accent : "transparent",
+            color: theme === mode ? t.bg : t.textMuted,
+            cursor: "pointer",
+          }}
+        >
+          {mode}
+        </button>
+      ))}
+    </div>
+  );
+}
+
 function Entry({ e, collapsible }) {
+  const t = useTheme();
   const [expanded, setExpanded] = useState(false);
   const hasBody = Boolean(e.description) || (e.tags && e.tags.length > 0);
   const showBody = !collapsible || expanded || !hasBody;
@@ -103,8 +164,8 @@ function Entry({ e, collapsible }) {
           width: 9,
           height: 9,
           borderRadius: "50%",
-          background: e.muted ? "#55534E" : "#2aeccf",
-          border: "2px solid #262624",
+          background: e.muted ? t.borderIcon : t.accent,
+          border: `2px solid ${t.bg}`,
         }}
       />
       <div
@@ -116,10 +177,7 @@ function Entry({ e, collapsible }) {
           marginBottom: 4,
         }}
       >
-        <span
-          className="mono"
-          style={{ fontSize: 12, color: e.muted ? "#8A8779" : "#2aeccf" }}
-        >
+        <span className="mono" style={{ fontSize: 12, color: e.muted ? t.textMuted : t.accent }}>
           {e.type === "cpd" ? formatCpdRange(e.date, e.end_date) : formatRange(e.date, e.end_date)}
         </span>
         {e.type === "cpd" && (
@@ -129,8 +187,8 @@ function Entry({ e, collapsible }) {
               fontSize: 10,
               letterSpacing: "0.08em",
               textTransform: "uppercase",
-              color: e.category === "course" ? "#F5F4F0" : "#8A8779",
-              border: e.category === "course" ? "1px solid #F5F4F0" : "1px solid #45433E",
+              color: e.category === "course" ? t.textPrimary : t.textMuted,
+              border: `1px solid ${e.category === "course" ? t.textPrimary : t.border}`,
               padding: "1px 6px",
             }}
           >
@@ -138,18 +196,12 @@ function Entry({ e, collapsible }) {
           </span>
         )}
         {isExpandable && (
-          <span
-            className="mono"
-            style={{ fontSize: 11, color: "#55534E", marginLeft: "auto" }}
-          >
+          <span className="mono" style={{ fontSize: 11, color: t.borderIcon, marginLeft: "auto" }}>
             {expanded ? "−" : "+"}
           </span>
         )}
         {!isExpandable && entryUrl && (
-          <span
-            className="mono"
-            style={{ fontSize: 11, color: "#55534E", marginLeft: "auto" }}
-          >
+          <span className="mono" style={{ fontSize: 11, color: t.borderIcon, marginLeft: "auto" }}>
             ↗
           </span>
         )}
@@ -160,39 +212,45 @@ function Entry({ e, collapsible }) {
           fontSize: 14,
           fontWeight: 500,
           fontStyle: e.muted ? "italic" : "normal",
-          color: e.muted ? "#C4C1B8" : "#F5F4F0",
+          color: e.muted ? t.textBody : t.textPrimary,
         }}
       >
         {e.title}
         {(e.org || e.location) && (
-          <span style={{ color: "#8A8779", fontWeight: 400, fontStyle: "normal" }}>
+          <span style={{ color: t.textMuted, fontWeight: 400, fontStyle: "normal" }}>
             {" "}
             — {[e.org, e.location].filter(Boolean).join(" · ")}
           </span>
         )}
       </h3>
       {e.speakers && (
-        <p className="mono" style={{ margin: "0 0 4px", fontSize: 11, color: "#8A8779" }}>
+        <p className="mono" style={{ margin: "0 0 4px", fontSize: 11, color: t.textMuted }}>
           {e.speakers}
         </p>
       )}
       {showBody && e.description && (
-        <p style={{ margin: "0 0 8px", fontSize: 14, color: "#C4C1B8" }}>{e.description}</p>
+        <p style={{ margin: "0 0 8px", fontSize: 14, color: t.textBody }}>{e.description}</p>
       )}
-      {showBody && e.type !== "cpd" && e.type !== "job" && e.type !== "education" && e.tags && e.tags.length > 0 && (
-        <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
-          {e.tags.map((tag) => (
-            <span key={tag} className="mono" style={{ fontSize: 10, color: "#6B6A63" }}>
-              #{tag}
-            </span>
-          ))}
-        </div>
-      )}
+      {showBody &&
+        e.type !== "cpd" &&
+        e.type !== "job" &&
+        e.type !== "education" &&
+        e.tags &&
+        e.tags.length > 0 && (
+          <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
+            {e.tags.map((tag) => (
+              <span key={tag} className="mono" style={{ fontSize: 10, color: t.textSubtle }}>
+                #{tag}
+              </span>
+            ))}
+          </div>
+        )}
     </div>
   );
 }
 
 function ConnectButton() {
+  const t = useTheme();
   const [open, setOpen] = useState(false);
   return (
     <div>
@@ -210,7 +268,7 @@ function ConnectButton() {
           fontSize: 12,
           letterSpacing: "0.06em",
           textTransform: "uppercase",
-          color: "#2aeccf",
+          color: t.accent,
           marginBottom: open ? 10 : 0,
         }}
       >
@@ -226,7 +284,7 @@ function ConnectButton() {
             target="_blank"
             rel="noopener noreferrer"
             className="mono"
-            style={{ fontSize: 12, color: "#C4C1B8", textDecoration: "none" }}
+            style={{ fontSize: 12, color: t.textBody, textDecoration: "none" }}
           >
             aedjob@gmail.com
           </a>
@@ -235,7 +293,7 @@ function ConnectButton() {
             target="_blank"
             rel="noopener noreferrer"
             className="mono"
-            style={{ fontSize: 12, color: "#C4C1B8", textDecoration: "none" }}
+            style={{ fontSize: 12, color: t.textBody, textDecoration: "none" }}
           >
             linkedin.com/in/aedjob
           </a>
@@ -246,6 +304,7 @@ function ConnectButton() {
 }
 
 function Section({ title, entries, collapsibleEntries, filters, yearFilter }) {
+  const t = useTheme();
   const [open, setOpen] = useState(false);
   const [activeFilter, setActiveFilter] = useState(null);
   const [activeYear, setActiveYear] = useState(null);
@@ -292,15 +351,15 @@ function Section({ title, entries, collapsibleEntries, filters, yearFilter }) {
           fontSize: 13,
           letterSpacing: "0.1em",
           textTransform: "uppercase",
-          color: "#F5F4F0",
+          color: t.textPrimary,
           marginBottom: open ? 16 : 0,
         }}
       >
-        <span style={{ color: "#2aeccf", fontSize: 12, width: 10, display: "inline-block" }}>
+        <span style={{ color: t.accent, fontSize: 12, width: 10, display: "inline-block" }}>
           {open ? "−" : "+"}
         </span>
         {title}
-        <span className="mono" style={{ color: "#55534E", fontSize: 11 }}>
+        <span className="mono" style={{ color: t.borderIcon, fontSize: 11 }}>
           ({entries.length})
         </span>
       </button>
@@ -308,25 +367,27 @@ function Section({ title, entries, collapsibleEntries, filters, yearFilter }) {
         <>
           {filters && (
             <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginBottom: 16 }}>
-              {Object.keys(filters).sort((a, b) => a.localeCompare(b)).map((label) => (
-                <button
-                  key={label}
-                  onClick={() => toggleFilter(label)}
-                  className="mono"
-                  style={{
-                    fontSize: 11,
-                    letterSpacing: "0.04em",
-                    padding: "5px 10px",
-                    border: "1px solid",
-                    borderColor: activeFilter === label ? "#2aeccf" : "#45433E",
-                    background: activeFilter === label ? "#2aeccf" : "transparent",
-                    color: activeFilter === label ? "#262624" : "#C4C1B8",
-                    cursor: "pointer",
-                  }}
-                >
-                  {label}
-                </button>
-              ))}
+              {Object.keys(filters)
+                .sort((a, b) => a.localeCompare(b))
+                .map((label) => (
+                  <button
+                    key={label}
+                    onClick={() => toggleFilter(label)}
+                    className="mono"
+                    style={{
+                      fontSize: 11,
+                      letterSpacing: "0.04em",
+                      padding: "5px 10px",
+                      border: "1px solid",
+                      borderColor: activeFilter === label ? t.accent : t.border,
+                      background: activeFilter === label ? t.accent : "transparent",
+                      color: activeFilter === label ? t.bg : t.textBody,
+                      cursor: "pointer",
+                    }}
+                  >
+                    {label}
+                  </button>
+                ))}
             </div>
           )}
           {yearFilter && availableYears.length > 1 && (
@@ -341,9 +402,9 @@ function Section({ title, entries, collapsibleEntries, filters, yearFilter }) {
                     letterSpacing: "0.04em",
                     padding: "5px 10px",
                     border: "1px solid",
-                    borderColor: activeYear === year ? "#2aeccf" : "#45433E",
-                    background: activeYear === year ? "#2aeccf" : "transparent",
-                    color: activeYear === year ? "#262624" : "#C4C1B8",
+                    borderColor: activeYear === year ? t.accent : t.border,
+                    background: activeYear === year ? t.accent : "transparent",
+                    color: activeYear === year ? t.bg : t.textBody,
                     cursor: "pointer",
                   }}
                 >
@@ -360,6 +421,7 @@ function Section({ title, entries, collapsibleEntries, filters, yearFilter }) {
 }
 
 function Timeline({ entries, collapsible }) {
+  const t = useTheme();
   return (
     <div style={{ position: "relative", paddingLeft: 24 }}>
       <div
@@ -369,7 +431,7 @@ function Timeline({ entries, collapsible }) {
           top: 6,
           bottom: 6,
           width: 1,
-          background: "#45433E",
+          background: t.border,
         }}
       />
       {entries.map((e) => (
@@ -379,12 +441,11 @@ function Timeline({ entries, collapsible }) {
   );
 }
 
-export default function CareerLog() {
+function CareerLogInner({ theme, onToggleTheme }) {
+  const t = useTheme();
+
   const projects = useMemo(
-    () =>
-      EVENTS.filter((e) => e.type === "project").sort((a, b) =>
-        b.date.localeCompare(a.date)
-      ),
+    () => EVENTS.filter((e) => e.type === "project").sort((a, b) => b.date.localeCompare(a.date)),
     []
   );
   const work = useMemo(
@@ -393,9 +454,7 @@ export default function CareerLog() {
   );
   const education = useMemo(
     () =>
-      EVENTS.filter((e) => e.type === "education").sort((a, b) =>
-        b.date.localeCompare(a.date)
-      ),
+      EVENTS.filter((e) => e.type === "education").sort((a, b) => b.date.localeCompare(a.date)),
     []
   );
   const cpd = useMemo(
@@ -407,8 +466,8 @@ export default function CareerLog() {
     <div
       style={{
         minHeight: "100vh",
-        background: "#262624",
-        color: "#E8E6DC",
+        background: t.bg,
+        color: t.textDefault,
         fontFamily: "'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif",
       }}
     >
@@ -416,18 +475,22 @@ export default function CareerLog() {
         @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500&display=swap');
         * { box-sizing: border-box; }
         .mono { font-family: 'IBM Plex Mono', monospace; }
-        .entry:hover { background: #2E2D2A; }
+        .entry:hover { background: ${t.hoverBg}; }
       `}</style>
 
       {/* Title block */}
       <header
         style={{
-          borderBottom: "2px solid #45433E",
+          borderBottom: `2px solid ${t.border}`,
           padding: "40px 24px 24px",
           maxWidth: 880,
           margin: "0 auto",
+          position: "relative",
         }}
       >
+        <div style={{ position: "absolute", top: 20, right: 24 }}>
+          <ThemeToggle theme={theme} onToggle={onToggleTheme} />
+        </div>
         <h1
           style={{
             fontFamily: "'IBM Plex Mono', monospace",
@@ -436,15 +499,15 @@ export default function CareerLog() {
             margin: "0 0 8px",
             letterSpacing: "0.1em",
             textTransform: "uppercase",
-            color: "#F5F4F0",
+            color: t.textPrimary,
           }}
         >
           Alfredo E. Job
         </h1>
-        <p style={{ margin: "0 0 4px", fontSize: 15, color: "#C4C1B8", maxWidth: 560 }}>
+        <p style={{ margin: "0 0 4px", fontSize: 15, color: t.textBody, maxWidth: 560 }}>
           Industrial Engineer (UTN) · M.Sc. Statistics &amp; Operations Research (RMIT)
         </p>
-        <p className="mono" style={{ margin: "0 0 16px", fontSize: 12, color: "#8A8779" }}>
+        <p className="mono" style={{ margin: "0 0 16px", fontSize: 12, color: t.textMuted }}>
           Supply Chain &amp; Operations
         </p>
         <ConnectButton />
@@ -460,17 +523,37 @@ export default function CareerLog() {
 
       <footer
         style={{
-          borderTop: "1px solid #45433E",
+          borderTop: `1px solid ${t.border}`,
           padding: "20px 24px",
           maxWidth: 880,
           margin: "0 auto",
         }}
       >
-        <p className="mono" style={{ fontSize: 11, color: "#6B6A63", margin: 0 }}>
+        <p className="mono" style={{ fontSize: 11, color: t.textSubtle, margin: 0 }}>
           Professional Log — Rev.{" "}
           {new Date().toLocaleDateString("en-US", { month: "short", year: "numeric" })}
         </p>
       </footer>
     </div>
+  );
+}
+
+export default function CareerLog() {
+  const [theme, setTheme] = useState(() => {
+    if (typeof window === "undefined") return "dark";
+    return window.localStorage.getItem("career-log-theme") || "dark";
+  });
+
+  function handleToggle(mode) {
+    setTheme(mode);
+    if (typeof window !== "undefined") {
+      window.localStorage.setItem("career-log-theme", mode);
+    }
+  }
+
+  return (
+    <ThemeContext.Provider value={THEMES[theme]}>
+      <CareerLogInner theme={theme} onToggleTheme={handleToggle} />
+    </ThemeContext.Provider>
   );
 }
