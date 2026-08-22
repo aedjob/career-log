@@ -520,8 +520,11 @@ function CareerLogInner({ theme, onToggleTheme }) {
         >
           Alfredo E. Job
         </h1>
-        <p style={{ margin: "0 0 16px", fontSize: 15, color: t.textBody, maxWidth: 560 }}>
+        <p style={{ margin: "0 0 4px", fontSize: 15, color: t.textBody, maxWidth: 560 }}>
           Industrial Engineer (UTN) · M.Sc. Statistics &amp; Operations Research (RMIT)
+        </p>
+        <p className="mono" style={{ margin: "0 0 16px", fontSize: 12, color: t.textMuted }}>
+          Supply Chain &amp; Operations
         </p>
         <ConnectButton />
       </header>
