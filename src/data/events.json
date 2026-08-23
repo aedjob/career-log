@@ -1067,5 +1067,21 @@
     ],
     "credential_url": null,
     "link": "https://www.eventbrite.com.au/e/activator-skill-up-workshop-develop-an-idea-tickets-51049466328"
+  },
+  {
+    "id": "2013-fundacion-energizar-biodiesel",
+    "date": "2013-11-01",
+    "end_date": null,
+    "type": "cpd",
+    "category": "course",
+    "title": "Curso de Producción de Biodiesel (Biodiesel Production Course)",
+    "org": "Fundación Energizar",
+    "location": "Buenos Aires AR",
+    "speakers": "Ing. Diego Musolino",
+    "duration_hours": null,
+    "description": "In-person course on the biodiesel production process — obtaining oils/fats as feedstock, transesterification using alcohol and a catalyst, and quality/purification considerations for the resulting biofuel.",
+    "tags": ["biodiesel", "renewable energy", "biofuels"],
+    "credential_url": null,
+    "link": null
   }
 ]
