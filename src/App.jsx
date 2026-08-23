@@ -1,4 +1,4 @@
-import { useMemo, useState, createContext, useContext, Fragment } from "react";
+import { useMemo, useState, createContext, useContext } from "react";
 import EVENTS from "./data/events.json";
 
 const THEMES = {
@@ -466,7 +466,13 @@ function quarterKey(dateStr) {
 function CpdMatrix({ cpd, filters }) {
   const t = useTheme();
   const [activeFilter, setActiveFilter] = useState(null);
-  const [expandedCell, setExpandedCell] = useState(null);
+
+  const availableYears = useMemo(() => {
+    const years = new Set(cpd.map((e) => quarterKey(e.date).year));
+    return [...years].sort((a, b) => b - a);
+  }, [cpd]);
+
+  const [activeYear, setActiveYear] = useState(availableYears[0] || new Date().getFullYear());
 
   function toggleFilter(label) {
     setActiveFilter((prev) => (prev === label ? null : label));
@@ -479,83 +485,71 @@ function CpdMatrix({ cpd, filters }) {
   }, [cpd, activeFilter, filters]);
 
   const rows = useMemo(() => {
-    const map = {};
+    const byQuarter = { 1: { courses: [], events: [] }, 2: { courses: [], events: [] }, 3: { courses: [], events: [] }, 4: { courses: [], events: [] } };
     for (const e of filtered) {
-      const { key, year, quarter } = quarterKey(e.date);
-      if (!map[key]) {
-        map[key] = { key, year, quarter, courses: [], events: [] };
-      }
+      const { year, quarter } = quarterKey(e.date);
+      if (year !== activeYear) continue;
       if (e.category === "course") {
-        map[key].courses.push(e);
+        byQuarter[quarter].courses.push(e);
       } else {
-        map[key].events.push(e);
+        byQuarter[quarter].events.push(e);
       }
     }
-    return Object.values(map).sort((a, b) => b.key.localeCompare(a.key));
-  }, [filtered]);
+    return [1, 2, 3, 4].map((q) => ({
+      quarter: q,
+      courses: byQuarter[q].courses,
+      events: byQuarter[q].events,
+      total: byQuarter[q].courses.length + byQuarter[q].events.length,
+    }));
+  }, [filtered, activeYear]);
 
-  function cellId(rowKey, col) {
-    return `${rowKey}-${col}`;
-  }
-
-  function renderCell(row, col) {
-    const items = col === "courses" ? row.courses : row.events;
-    const count = items.length;
-    const hasPlanned = items.some((e) => e.completed === 0);
-    const id = cellId(row.key, col);
-    const isOpen = expandedCell === id;
-
-    return (
-      <td
-        onClick={() => count > 0 && setExpandedCell(isOpen ? null : id)}
-        style={{
-          padding: "10px 12px",
-          textAlign: "center",
-          cursor: count > 0 ? "pointer" : "default",
-          color: count > 0 ? t.textPrimary : t.borderIcon,
-          background: isOpen ? t.hoverBg : "transparent",
-        }}
-      >
-        <span className="mono" style={{ fontSize: 13 }}>
-          {count > 0 ? count : "–"}
+  function renderList(items) {
+    if (items.length === 0) {
+      return (
+        <span className="mono" style={{ fontSize: 12, color: t.borderIcon }}>
+          –
         </span>
-        {hasPlanned && (
-          <span className="mono" style={{ fontSize: 10, color: t.textMuted, marginLeft: 3 }}>
-            *
-          </span>
-        )}
-      </td>
-    );
-  }
-
-  function renderExpanded(row, col) {
-    const items = col === "courses" ? row.courses : row.events;
-    const id = cellId(row.key, col);
-    if (expandedCell !== id) return null;
+      );
+    }
     return (
-      <tr>
-        <td colSpan={3} style={{ padding: "4px 12px 14px", borderBottom: `1px solid ${t.border}` }}>
-          <ul style={{ margin: 0, padding: 0, listStyle: "none" }}>
-            {items.map((e) => (
-              <li
-                key={e.id}
-                className="mono"
-                style={{ fontSize: 12, color: t.textBody, marginBottom: 4 }}
-              >
-                <span style={{ color: t.textMuted }}>{formatMonthYear(e.date)}</span> — {e.title}
-                {e.completed === 0 && (
-                  <span style={{ color: t.textMuted }}> (planned)</span>
-                )}
-              </li>
-            ))}
-          </ul>
-        </td>
-      </tr>
+      <ul style={{ margin: 0, padding: 0, listStyle: "none" }}>
+        {items.map((e) => (
+          <li
+            key={e.id}
+            className="mono"
+            style={{ fontSize: 11, color: t.textBody, marginBottom: 3, lineHeight: 1.4 }}
+          >
+            {e.title}
+            {e.completed === 0 && <span style={{ color: t.textMuted }}> (planned)</span>}
+          </li>
+        ))}
+      </ul>
     );
   }
 
   return (
     <div>
+      <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginBottom: 12 }}>
+        {availableYears.map((year) => (
+          <button
+            key={year}
+            onClick={() => setActiveYear(year)}
+            className="mono"
+            style={{
+              fontSize: 11,
+              letterSpacing: "0.04em",
+              padding: "5px 10px",
+              border: "1px solid",
+              borderColor: activeYear === year ? t.accent : t.border,
+              background: activeYear === year ? t.accent : "transparent",
+              color: activeYear === year ? t.bg : t.textBody,
+              cursor: "pointer",
+            }}
+          >
+            {year}
+          </button>
+        ))}
+      </div>
       <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginBottom: 20 }}>
         {Object.keys(filters)
           .sort((a, b) => a.localeCompare(b))
@@ -592,6 +586,7 @@ function CpdMatrix({ cpd, filters }) {
                 letterSpacing: "0.06em",
                 textTransform: "uppercase",
                 color: t.textMuted,
+                width: 90,
               }}
             >
               Quarter
@@ -599,7 +594,7 @@ function CpdMatrix({ cpd, filters }) {
             <th
               className="mono"
               style={{
-                textAlign: "center",
+                textAlign: "left",
                 padding: "8px 12px",
                 fontSize: 11,
                 letterSpacing: "0.06em",
@@ -612,7 +607,7 @@ function CpdMatrix({ cpd, filters }) {
             <th
               className="mono"
               style={{
-                textAlign: "center",
+                textAlign: "left",
                 padding: "8px 12px",
                 fontSize: 11,
                 letterSpacing: "0.06em",
@@ -622,29 +617,54 @@ function CpdMatrix({ cpd, filters }) {
             >
               Events
             </th>
+            <th
+              className="mono"
+              style={{
+                textAlign: "center",
+                padding: "8px 12px",
+                fontSize: 11,
+                letterSpacing: "0.06em",
+                textTransform: "uppercase",
+                color: t.textMuted,
+                width: 60,
+              }}
+            >
+              Total
+            </th>
           </tr>
         </thead>
         <tbody>
           {rows.map((row) => (
-            <Fragment key={row.key}>
-              <tr style={{ borderBottom: `1px solid ${t.border}` }}>
-                <td className="mono" style={{ padding: "10px 12px", fontSize: 13, color: t.textPrimary }}>
-                  {row.year} Q{row.quarter}
-                </td>
-                {renderCell(row, "courses")}
-                {renderCell(row, "events")}
-              </tr>
-              {renderExpanded(row, "courses")}
-              {renderExpanded(row, "events")}
-            </Fragment>
+            <tr key={row.quarter} style={{ borderBottom: `1px solid ${t.border}` }}>
+              <td
+                className="mono"
+                style={{
+                  padding: "12px",
+                  fontSize: 13,
+                  color: t.textPrimary,
+                  verticalAlign: "top",
+                }}
+              >
+                {activeYear} Q{row.quarter}
+              </td>
+              <td style={{ padding: "12px", verticalAlign: "top" }}>{renderList(row.courses)}</td>
+              <td style={{ padding: "12px", verticalAlign: "top" }}>{renderList(row.events)}</td>
+              <td
+                className="mono"
+                style={{
+                  padding: "12px",
+                  fontSize: 13,
+                  color: row.total > 0 ? t.textPrimary : t.borderIcon,
+                  textAlign: "center",
+                  verticalAlign: "top",
+                }}
+              >
+                {row.total > 0 ? row.total : "–"}
+              </td>
+            </tr>
           ))}
         </tbody>
       </table>
-      {rows.length === 0 && (
-        <p className="mono" style={{ fontSize: 12, color: t.textMuted, marginTop: 16 }}>
-          No entries for this filter.
-        </p>
-      )}
     </div>
   );
 }
@@ -761,7 +781,7 @@ function CareerLogInner({ theme, onToggleTheme }) {
             cursor: "pointer",
           }}
         >
-          {view === "timeline" ? "CPD Matrix" : "← Back to Profile"}
+          {view === "timeline" ? "Events scheduler" : "← Back to Profile"}
         </button>
       </footer>
     </div>
