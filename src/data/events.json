@@ -1140,5 +1140,22 @@
     "credential_url": null,
     "link": "https://www.energizar.org.ar/inicio/",
     "completed": 1
+  },
+  {
+    "id": "2026-utn-electricidad-domiciliaria-basico",
+    "date": "2026-08-10",
+    "end_date": "2026-09-30",
+    "type": "cpd",
+    "category": "course",
+    "title": "Electricidad Domiciliaria — Nivel Básico (Domestic Electricity — Basic Level)",
+    "org": "UTN Buenos Aires (Centro e-Learning)",
+    "location": "Online",
+    "speakers": "Luciano Herrera (Ingeniero Eléctrico, UTN FRBA); Jorge Patricio Browne (Instalador Electricista, Registro COPIME R003366)",
+    "duration_hours": 28,
+    "description": "Course on fundamental electricity concepts and their practical application in residential electrical installation and repair work.",
+    "tags": ["electricity", "residential installation", "energy"],
+    "credential_url": null,
+    "link": "https://utnba.centrodeelearning.com/detalle/curso/2152/electricidad-domiciliaria-nivel-basico",
+    "completed": 0
   }
 ]
