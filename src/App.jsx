@@ -673,10 +673,11 @@ function CareerLogInner({ theme, onToggleTheme }) {
       EVENTS.filter((e) => e.type === "education").sort((a, b) => b.date.localeCompare(a.date)),
     []
   );
-  const cpd = useMemo(
+  const cpdAll = useMemo(
     () => EVENTS.filter((e) => e.type === "cpd").sort((a, b) => b.date.localeCompare(a.date)),
     []
   );
+  const cpdCompleted = useMemo(() => cpdAll.filter((e) => e.completed !== 0), [cpdAll]);
 
   return (
     <div
@@ -736,10 +737,10 @@ function CareerLogInner({ theme, onToggleTheme }) {
             {/* <Section title="Projects" entries={projects} /> */}
             <Section title="Work" entries={work} />
             <Section title="Education" entries={education} />
-            <Section title="CPD" entries={cpd} filters={CPD_FILTERS} yearFilter />
+            <Section title="CPD" entries={cpdCompleted} filters={CPD_FILTERS} yearFilter />
           </>
         ) : (
-          <CpdMatrix cpd={cpd} filters={CPD_FILTERS} />
+          <CpdMatrix cpd={cpdAll} filters={CPD_FILTERS} />
         )}
       </main>
 
