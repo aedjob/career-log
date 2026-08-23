@@ -1,4 +1,4 @@
-import { useMemo, useState, createContext, useContext } from "react";
+import { useMemo, useState, createContext, useContext, Fragment } from "react";
 import EVENTS from "./data/events.json";
 
 const THEMES = {
@@ -457,8 +457,201 @@ function Timeline({ entries, collapsible }) {
   );
 }
 
+function quarterKey(dateStr) {
+  const d = new Date(dateStr + "T00:00:00");
+  const q = Math.floor(d.getMonth() / 3) + 1;
+  return { key: `${d.getFullYear()}-Q${q}`, year: d.getFullYear(), quarter: q };
+}
+
+function CpdMatrix({ cpd, filters }) {
+  const t = useTheme();
+  const [activeFilter, setActiveFilter] = useState(null);
+  const [expandedCell, setExpandedCell] = useState(null);
+
+  function toggleFilter(label) {
+    setActiveFilter((prev) => (prev === label ? null : label));
+  }
+
+  const filtered = useMemo(() => {
+    if (!activeFilter) return cpd;
+    const tagSet = filters[activeFilter];
+    return cpd.filter((e) => e.tags && e.tags.some((tag) => tagSet.includes(tag)));
+  }, [cpd, activeFilter, filters]);
+
+  const rows = useMemo(() => {
+    const map = {};
+    for (const e of filtered) {
+      const { key, year, quarter } = quarterKey(e.date);
+      if (!map[key]) {
+        map[key] = { key, year, quarter, courses: [], events: [] };
+      }
+      if (e.category === "course") {
+        map[key].courses.push(e);
+      } else {
+        map[key].events.push(e);
+      }
+    }
+    return Object.values(map).sort((a, b) => b.key.localeCompare(a.key));
+  }, [filtered]);
+
+  function cellId(rowKey, col) {
+    return `${rowKey}-${col}`;
+  }
+
+  function renderCell(row, col) {
+    const items = col === "courses" ? row.courses : row.events;
+    const count = items.length;
+    const hasPlanned = items.some((e) => e.completed === 0);
+    const id = cellId(row.key, col);
+    const isOpen = expandedCell === id;
+
+    return (
+      <td
+        onClick={() => count > 0 && setExpandedCell(isOpen ? null : id)}
+        style={{
+          padding: "10px 12px",
+          textAlign: "center",
+          cursor: count > 0 ? "pointer" : "default",
+          color: count > 0 ? t.textPrimary : t.borderIcon,
+          background: isOpen ? t.hoverBg : "transparent",
+        }}
+      >
+        <span className="mono" style={{ fontSize: 13 }}>
+          {count > 0 ? count : "–"}
+        </span>
+        {hasPlanned && (
+          <span className="mono" style={{ fontSize: 10, color: t.textMuted, marginLeft: 3 }}>
+            *
+          </span>
+        )}
+      </td>
+    );
+  }
+
+  function renderExpanded(row, col) {
+    const items = col === "courses" ? row.courses : row.events;
+    const id = cellId(row.key, col);
+    if (expandedCell !== id) return null;
+    return (
+      <tr>
+        <td colSpan={3} style={{ padding: "4px 12px 14px", borderBottom: `1px solid ${t.border}` }}>
+          <ul style={{ margin: 0, padding: 0, listStyle: "none" }}>
+            {items.map((e) => (
+              <li
+                key={e.id}
+                className="mono"
+                style={{ fontSize: 12, color: t.textBody, marginBottom: 4 }}
+              >
+                <span style={{ color: t.textMuted }}>{formatMonthYear(e.date)}</span> — {e.title}
+                {e.completed === 0 && (
+                  <span style={{ color: t.textMuted }}> (planned)</span>
+                )}
+              </li>
+            ))}
+          </ul>
+        </td>
+      </tr>
+    );
+  }
+
+  return (
+    <div>
+      <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginBottom: 20 }}>
+        {Object.keys(filters)
+          .sort((a, b) => a.localeCompare(b))
+          .map((label) => (
+            <button
+              key={label}
+              onClick={() => toggleFilter(label)}
+              className="mono"
+              style={{
+                fontSize: 11,
+                letterSpacing: "0.04em",
+                padding: "5px 10px",
+                border: "1px solid",
+                borderColor: activeFilter === label ? t.accent : t.border,
+                background: activeFilter === label ? t.accent : "transparent",
+                color: activeFilter === label ? t.bg : t.textBody,
+                cursor: "pointer",
+              }}
+            >
+              {label}
+            </button>
+          ))}
+      </div>
+
+      <table style={{ width: "100%", borderCollapse: "collapse" }}>
+        <thead>
+          <tr style={{ borderBottom: `2px solid ${t.border}` }}>
+            <th
+              className="mono"
+              style={{
+                textAlign: "left",
+                padding: "8px 12px",
+                fontSize: 11,
+                letterSpacing: "0.06em",
+                textTransform: "uppercase",
+                color: t.textMuted,
+              }}
+            >
+              Quarter
+            </th>
+            <th
+              className="mono"
+              style={{
+                textAlign: "center",
+                padding: "8px 12px",
+                fontSize: 11,
+                letterSpacing: "0.06em",
+                textTransform: "uppercase",
+                color: t.textMuted,
+              }}
+            >
+              Courses
+            </th>
+            <th
+              className="mono"
+              style={{
+                textAlign: "center",
+                padding: "8px 12px",
+                fontSize: 11,
+                letterSpacing: "0.06em",
+                textTransform: "uppercase",
+                color: t.textMuted,
+              }}
+            >
+              Events
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map((row) => (
+            <Fragment key={row.key}>
+              <tr style={{ borderBottom: `1px solid ${t.border}` }}>
+                <td className="mono" style={{ padding: "10px 12px", fontSize: 13, color: t.textPrimary }}>
+                  {row.year} Q{row.quarter}
+                </td>
+                {renderCell(row, "courses")}
+                {renderCell(row, "events")}
+              </tr>
+              {renderExpanded(row, "courses")}
+              {renderExpanded(row, "events")}
+            </Fragment>
+          ))}
+        </tbody>
+      </table>
+      {rows.length === 0 && (
+        <p className="mono" style={{ fontSize: 12, color: t.textMuted, marginTop: 16 }}>
+          No entries for this filter.
+        </p>
+      )}
+    </div>
+  );
+}
+
 function CareerLogInner({ theme, onToggleTheme }) {
   const t = useTheme();
+  const [view, setView] = useState("timeline");
 
   const projects = useMemo(
     () => EVENTS.filter((e) => e.type === "project").sort((a, b) => b.date.localeCompare(a.date)),
@@ -530,11 +723,17 @@ function CareerLogInner({ theme, onToggleTheme }) {
       </header>
 
       <main style={{ maxWidth: 880, margin: "0 auto", padding: "40px 24px 80px" }}>
-        {/* Projects section hidden until real entries exist — data/schema stays ready, just re-add this line when populated */}
-        {/* <Section title="Projects" entries={projects} /> */}
-        <Section title="Work" entries={work} />
-        <Section title="Education" entries={education} />
-        <Section title="CPD" entries={cpd} filters={CPD_FILTERS} yearFilter />
+        {view === "timeline" ? (
+          <>
+            {/* Projects section hidden until real entries exist — data/schema stays ready, just re-add this line when populated */}
+            {/* <Section title="Projects" entries={projects} /> */}
+            <Section title="Work" entries={work} />
+            <Section title="Education" entries={education} />
+            <Section title="CPD" entries={cpd} filters={CPD_FILTERS} yearFilter />
+          </>
+        ) : (
+          <CpdMatrix cpd={cpd} filters={CPD_FILTERS} />
+        )}
       </main>
 
       <footer
@@ -549,6 +748,21 @@ function CareerLogInner({ theme, onToggleTheme }) {
           Professional Log — Rev.{" "}
           {new Date().toLocaleDateString("en-US", { month: "short", year: "numeric" })}
         </p>
+        <button
+          onClick={() => setView((v) => (v === "timeline" ? "matrix" : "timeline"))}
+          className="mono"
+          style={{
+            background: "none",
+            border: "none",
+            padding: 0,
+            marginTop: 6,
+            fontSize: 11,
+            color: t.textSubtle,
+            cursor: "pointer",
+          }}
+        >
+          {view === "timeline" ? "CPD Matrix" : "← Back to Profile"}
+        </button>
       </footer>
     </div>
   );
