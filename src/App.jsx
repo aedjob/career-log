@@ -512,18 +512,31 @@ function CpdMatrix({ cpd, filters }) {
       );
     }
     return (
-      <ul style={{ margin: 0, padding: 0, listStyle: "none" }}>
-        {items.map((e) => (
-          <li
-            key={e.id}
-            className="mono"
-            style={{ fontSize: 11, color: t.textBody, marginBottom: 3, lineHeight: 1.4 }}
-          >
-            {e.title}
-            {e.completed === 0 && <span style={{ color: t.textMuted }}> (planned)</span>}
-          </li>
-        ))}
-      </ul>
+      <div>
+        <span className="mono" style={{ fontSize: 12, color: t.textPrimary }}>
+          {items.length}
+        </span>
+        <ul style={{ margin: "4px 0 0", padding: 0, listStyle: "none" }}>
+          {items.map((e) => (
+            <li
+              key={e.id}
+              className="mono"
+              style={{
+                fontSize: 11,
+                color: t.textBody,
+                marginBottom: 3,
+                lineHeight: 1.4,
+                paddingLeft: 12,
+                position: "relative",
+              }}
+            >
+              <span style={{ position: "absolute", left: 0, color: t.textMuted }}>–</span>
+              {e.title}
+              {e.completed === 0 && <span style={{ color: t.textMuted }}> (planned)</span>}
+            </li>
+          ))}
+        </ul>
+      </div>
     );
   }
 
@@ -617,20 +630,6 @@ function CpdMatrix({ cpd, filters }) {
             >
               Events
             </th>
-            <th
-              className="mono"
-              style={{
-                textAlign: "center",
-                padding: "8px 12px",
-                fontSize: 11,
-                letterSpacing: "0.06em",
-                textTransform: "uppercase",
-                color: t.textMuted,
-                width: 60,
-              }}
-            >
-              Total
-            </th>
           </tr>
         </thead>
         <tbody>
@@ -649,18 +648,6 @@ function CpdMatrix({ cpd, filters }) {
               </td>
               <td style={{ padding: "12px", verticalAlign: "top" }}>{renderList(row.courses)}</td>
               <td style={{ padding: "12px", verticalAlign: "top" }}>{renderList(row.events)}</td>
-              <td
-                className="mono"
-                style={{
-                  padding: "12px",
-                  fontSize: 13,
-                  color: row.total > 0 ? t.textPrimary : t.borderIcon,
-                  textAlign: "center",
-                  verticalAlign: "top",
-                }}
-              >
-                {row.total > 0 ? row.total : "–"}
-              </td>
             </tr>
           ))}
         </tbody>
