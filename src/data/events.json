@@ -1174,5 +1174,22 @@
     "credential_url": null,
     "link": "https://cui.edu.ar/chino",
     "completed": 0
+  },
+  {
+    "id": "2026-mitx-15-763x-system-design",
+    "date": "2026-08-11",
+    "end_date": "2026-10-13",
+    "type": "cpd",
+    "category": "course",
+    "title": "System Design for Manufacturing and Supply Chains (MITx 15.763x)",
+    "org": "MIT (MITx, Principles of Manufacturing MicroMasters)",
+    "location": "Online",
+    "speakers": "Stephen Graves (Abraham J. Siegel Professor of Management, MIT Sloan); Sean Willems",
+    "duration_hours": 90,
+    "description": "Course on decision-making for manufacturing system and supply chain design — frameworks and models for logistics network design, capacity planning and flexibility, make-buy decisions, supply chain contracting, and supply chain risk mitigation, illustrated through industry cases. Part of MIT's Principles of Manufacturing MicroMasters program.",
+    "tags": ["supply chain design", "manufacturing", "logistics network design", "risk management"],
+    "credential_url": null,
+    "link": "https://learn.mit.edu/courses/course-v1:MITxT+15.763x",
+    "completed": 0
   }
 ]
