@@ -523,7 +523,7 @@ function CpdMatrix({ cpd, filters }) {
               className="mono"
               style={{
                 fontSize: 11,
-                color: t.textBody,
+                color: e.completed === 0 ? t.textSubtle : t.textBody,
                 marginBottom: 3,
                 lineHeight: 1.4,
                 paddingLeft: 12,
@@ -532,7 +532,7 @@ function CpdMatrix({ cpd, filters }) {
             >
               <span style={{ position: "absolute", left: 0, color: t.textMuted }}>–</span>
               {e.title}
-              {e.completed === 0 && <span style={{ color: t.textMuted }}> (planned)</span>}
+              {e.completed === 0 && <span> (ongoing)</span>}
             </li>
           ))}
         </ul>
@@ -769,7 +769,7 @@ function CareerLogInner({ theme, onToggleTheme }) {
             cursor: "pointer",
           }}
         >
-          {view === "timeline" ? "Events scheduler" : "← Back to Profile"}
+          {view === "timeline" ? "Schedule view" : "← Back to Profile"}
         </button>
       </footer>
     </div>
