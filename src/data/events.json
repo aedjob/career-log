@@ -1157,5 +1157,22 @@
     "credential_url": null,
     "link": "https://utnba.centrodeelearning.com/detalle/curso/2152/electricidad-domiciliaria-nivel-basico",
     "completed": 0
+  },
+  {
+    "id": "2026-cui-chino-nivel-01",
+    "date": "2026-08-25",
+    "end_date": "2026-11-10",
+    "type": "cpd",
+    "category": "course",
+    "title": "Chino Trimestral Nivel 01 Inicial (Chinese Trimester Level 01 Introductory)",
+    "org": "Centro Universitario de Idiomas",
+    "location": "Junín 222, Buenos Aires AR",
+    "speakers": null,
+    "duration_hours": 22,
+    "description": "Introductory-level Mandarin Chinese course, in-person, meeting Tuesdays and Fridays 10am–12pm.",
+    "tags": ["Chinese", "Mandarin", "language"],
+    "credential_url": null,
+    "link": "https://cui.edu.ar/chino",
+    "completed": 0
   }
 ]
