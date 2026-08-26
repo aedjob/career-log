@@ -1191,5 +1191,22 @@
     "credential_url": null,
     "link": "https://learn.mit.edu/courses/course-v1:MITxT+15.763x",
     "completed": 0
+  },
+  {
+    "id": "2026-expo-industrias",
+    "date": "2026-08-25",
+    "end_date": "2026-08-27",
+    "type": "cpd",
+    "category": "conference",
+    "title": "Expo Industrias y Servicios 2026 (IV Edición)",
+    "org": "Expo Industrias",
+    "location": "La Rural, Buenos Aires AR",
+    "speakers": null,
+    "duration_hours": 3,
+    "description": "National and international industry and services trade show, with a conference program covering robotics, AI adoption in industry, ERP/digital transformation, and industrial finance.",
+    "tags": ["industry", "trade show", "AI", "robotics"],
+    "credential_url": null,
+    "link": "https://expoindustrias.com.ar/",
+    "completed": 1
   }
 ]
