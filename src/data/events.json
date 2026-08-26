@@ -1208,5 +1208,22 @@
     "credential_url": null,
     "link": "https://expoindustrias.com.ar/",
     "completed": 1
+  },
+  {
+    "id": "2026-congreso-industrial-mineria-industria",
+    "date": "2026-08-25",
+    "end_date": null,
+    "type": "cpd",
+    "category": "seminar",
+    "title": "Minería e Industria Nacional: Proveedores, tecnología y valor agregado (National Mining and Industry: Suppliers, Technology, and Added Value)",
+    "org": "7° Congreso Industrial del Consenso Nacional del Trabajo y la Producción (IPA)",
+    "location": "Pabellón Azul, La Rural, Buenos Aires AR",
+    "speakers": "Roberto Cacciola (Presidente, Cámara Argentina de Empresas Mineras — CAEM); Alejandro Martín",
+    "duration_hours": 1,
+    "description": "Panel on mining and national industry — suppliers, technology adoption, and value-added opportunities for Argentine industrial suppliers in the mining sector.",
+    "tags": ["mining", "industry", "supply chain"],
+    "credential_url": null,
+    "link": null,
+    "completed": 1
   }
 ]
