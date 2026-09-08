@@ -1259,5 +1259,22 @@
     "credential_url": null,
     "link": "https://www.congreso3d.com.ar/",
     "completed": 1
+  },
+  {
+    "id": "2026-3d-metal-printing-nuclear-industry",
+    "date": "2026-09-04",
+    "end_date": null,
+    "type": "cpd",
+    "category": "seminar",
+    "title": "Impresión 3D de metales en la industria nuclear: innovación, desarrollo y desafíos para Argentina (3D Metal Printing in the Nuclear Industry: Innovation, Development, and Challenges for Argentina)",
+    "org": "Cámara Argentina de Impresión 3D y Fabricaciones Digitales (CAMAR3D)",
+    "location": "Auditorio Principal, La Rural, Buenos Aires AR",
+    "speakers": "Dra. Mg. DI Mercedes Duran",
+    "duration_hours": 1,
+    "description": "Talk on how metal 3D printing is transforming the nuclear sector — Argentine developments, applications of LPBF, DED and WAAM technologies, and the challenges of incorporating additive manufacturing into one of the world's most demanding industries.",
+    "tags": ["3D printing", "additive manufacturing", "nuclear industry", "metal printing"],
+    "credential_url": null,
+    "link": null,
+    "completed": 1
   }
 ]
