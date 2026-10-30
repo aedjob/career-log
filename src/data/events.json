@@ -1142,23 +1142,6 @@
     "completed": 1
   },
   {
-    "id": "2026-utn-electricidad-domiciliaria-basico",
-    "date": "2026-08-10",
-    "end_date": "2026-09-30",
-    "type": "cpd",
-    "category": "course",
-    "title": "Electricidad Domiciliaria — Nivel Básico (Domestic Electricity — Basic Level)",
-    "org": "UTN Buenos Aires (Centro e-Learning)",
-    "location": "Online",
-    "speakers": "Luciano Herrera (Ingeniero Eléctrico, UTN FRBA); Jorge Patricio Browne (Instalador Electricista, Registro COPIME R003366)",
-    "duration_hours": 28,
-    "description": "Course on fundamental electricity concepts and their practical application in residential electrical installation and repair work.",
-    "tags": ["electricity", "residential installation", "energy"],
-    "credential_url": null,
-    "link": "https://utnba.centrodeelearning.com/detalle/curso/2152/electricidad-domiciliaria-nivel-basico",
-    "completed": 0
-  },
-  {
     "id": "2026-cui-chino-nivel-01",
     "date": "2026-08-25",
     "end_date": "2026-11-10",
@@ -1170,26 +1153,13 @@
     "speakers": null,
     "duration_hours": 22,
     "description": "Introductory-level Mandarin Chinese course, in-person, meeting Tuesdays and Fridays 10am–12pm.",
-    "tags": ["Chinese", "Mandarin", "language"],
+    "tags": [
+      "Chinese",
+      "Mandarin",
+      "language"
+    ],
     "credential_url": null,
     "link": "https://cui.edu.ar/chino",
-    "completed": 0
-  },
-  {
-    "id": "2026-mitx-15-763x-system-design",
-    "date": "2026-08-11",
-    "end_date": "2026-10-13",
-    "type": "cpd",
-    "category": "course",
-    "title": "System Design for Manufacturing and Supply Chains (MITx 15.763x)",
-    "org": "MIT (MITx, Principles of Manufacturing MicroMasters)",
-    "location": "Online",
-    "speakers": "Stephen Graves (Abraham J. Siegel Professor of Management, MIT Sloan); Sean Willems",
-    "duration_hours": 90,
-    "description": "Course on decision-making for manufacturing system and supply chain design — frameworks and models for logistics network design, capacity planning and flexibility, make-buy decisions, supply chain contracting, and supply chain risk mitigation, illustrated through industry cases. Part of MIT's Principles of Manufacturing MicroMasters program.",
-    "tags": ["supply chain design", "manufacturing", "logistics network design", "risk management"],
-    "credential_url": null,
-    "link": "https://learn.mit.edu/courses/course-v1:MITxT+15.763x",
     "completed": 0
   },
   {
@@ -1204,7 +1174,12 @@
     "speakers": null,
     "duration_hours": 3,
     "description": "National and international industry and services trade show, with a conference program covering robotics, AI adoption in industry, ERP/digital transformation, and industrial finance.",
-    "tags": ["industry", "trade show", "AI", "robotics"],
+    "tags": [
+      "industry",
+      "trade show",
+      "AI",
+      "robotics"
+    ],
     "credential_url": null,
     "link": "https://expoindustrias.com.ar/",
     "completed": 1
@@ -1221,7 +1196,11 @@
     "speakers": "Roberto Cacciola (Presidente, Cámara Argentina de Empresas Mineras — CAEM); Alejandro Martín",
     "duration_hours": 1,
     "description": "Panel on mining and national industry — suppliers, technology adoption, and value-added opportunities for Argentine industrial suppliers in the mining sector.",
-    "tags": ["mining", "industry", "supply chain"],
+    "tags": [
+      "mining",
+      "industry",
+      "supply chain"
+    ],
     "credential_url": null,
     "link": "https://drive.google.com/file/d/1BqhuOGoOOUM69KRJqYAznv_QEGHtAUcP/view",
     "completed": 1
@@ -1238,7 +1217,13 @@
     "speakers": "Rav Raniga (General Manager New Business, Biarri)",
     "duration_hours": 1,
     "description": "Webinar on purpose-built optimisation for complex operational planning — recognising complex decision-based planning environments, choosing the right algorithmic technologies, a real transformation case study, and scaling planning capability without growing the planning team.",
-    "tags": ["operations planning", "optimisation", "supply chain", "algorithms", "analytics"],
+    "tags": [
+      "operations planning",
+      "optimisation",
+      "supply chain",
+      "algorithms",
+      "analytics"
+    ],
     "credential_url": null,
     "link": "https://info.sclaa.com.au/event-6789688",
     "completed": 1
@@ -1255,7 +1240,12 @@
     "speakers": null,
     "duration_hours": 1,
     "description": "Argentina's leading additive manufacturing event — conferences, trade exhibition, live demonstrations and networking covering 3D printing, digital fabrication, robotics, and AI in manufacturing.",
-    "tags": ["3D printing", "additive manufacturing", "robotics", "AI"],
+    "tags": [
+      "3D printing",
+      "additive manufacturing",
+      "robotics",
+      "AI"
+    ],
     "credential_url": null,
     "link": "https://www.congreso3d.com.ar/",
     "completed": 1
@@ -1272,9 +1262,37 @@
     "speakers": "Dra. Mg. DI Mercedes Duran",
     "duration_hours": 1,
     "description": "Talk on how metal 3D printing is transforming the nuclear sector — Argentine developments, applications of LPBF, DED and WAAM technologies, and the challenges of incorporating additive manufacturing into one of the world's most demanding industries.",
-    "tags": ["3D printing", "additive manufacturing", "nuclear industry", "metal printing"],
+    "tags": [
+      "3D printing",
+      "additive manufacturing",
+      "nuclear industry",
+      "metal printing"
+    ],
     "credential_url": null,
     "link": null,
     "completed": 1
+  },
+  {
+    "id": "2026-utn-electricidad-industrial-modulo-control",
+    "date": "2026-10-26",
+    "end_date": "2026-12-02",
+    "type": "cpd",
+    "category": "course",
+    "title": "Electricidad Industrial — Módulo Control (Industrial Electricity — Control Module)",
+    "org": "UTN Buenos Aires",
+    "location": "UTN FRBA, Sede Mozart, Buenos Aires AR",
+    "speakers": "Enrique Pablo Ferraro",
+    "duration_hours": 36,
+    "description": "In-person course on industrial control — protection and control gear (breakers, contactors, thermal relays), reading power and control diagrams, sensors and actuators, and hands-on PLC programming in ladder logic with a SCADA screen on a workshop conveyor.",
+    "tags": [
+      "industrial electricity",
+      "PLC",
+      "SCADA",
+      "automation",
+      "energy"
+    ],
+    "credential_url": null,
+    "link": "https://sceu.frba.utn.edu.ar/cursos/curso/electricidad-industrial-modulo-control",
+    "completed": 0
   }
 ]
