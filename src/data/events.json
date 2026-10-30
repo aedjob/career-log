@@ -1294,5 +1294,27 @@
     "credential_url": null,
     "link": "https://sceu.frba.utn.edu.ar/cursos/curso/electricidad-industrial-modulo-control",
     "completed": 0
+  },
+  {
+    "id": "2026-giar-ai-robotics-2026",
+    "date": "2026-10-27",
+    "end_date": null,
+    "type": "cpd",
+    "category": "conference",
+    "title": "GIAR AI & Robotics 2026",
+    "org": "GIAR — UTN Buenos Aires",
+    "location": "UTN FRBA, Sede Medrano, Buenos Aires AR",
+    "speakers": "José Tabuyo and Leandro Di Matteo; Alan Daitch; Laura Cabrera (Siemens); Thiago Mowszet (IBM); Aníbal Suárez Schmitz (GenIA); Enrique Pennimpede (Intive); Laura Orfanó and Ignacio Bluro",
+    "duration_hours": 3,
+    "description": "Evening event marking 40 years of UTN's Artificial Intelligence and Robotics Group (GIAR) — industry and research talks on AI applications, agents, automation and humanoid/autonomous robotics, with networking between companies, academia and students.",
+    "tags": [
+      "AI",
+      "robotics",
+      "automation",
+      "GenAI"
+    ],
+    "credential_url": null,
+    "link": "https://evento2026.giar.ai/",
+    "completed": 1
   }
 ]
